@@ -59,15 +59,6 @@ img {
   height: auto; 
 }
 </style>
-<div class="container-fluid main-container">
-
-
-<div id="header">
-<h1 class="title">Simple Linear Regression - An example using R</h1>
-<h4 class="author"><em>Felipe Rego</em></h4>
-<h4 class="date"><em>March, 2015</em></h4>
-</div>
-
 
 <p>Linear regression is a type of supervised statistical learning approach that is useful for predicting a quantitative response Y. It can take the form of a single regression problem (where you use only a single predictor variable X) or a multiple regression (when more than one predictor is used in the model). It is one of the simplest and most straightforward approaches available and it is a starting point for more advanced modelling and predictive exercises.</p>
 <p>This example will illustrate the application of a linear regression exercise using one single predictor (Simple Linear Regression). Our primary focus will be on the inferential aspect of the statistical learning exercise rather than on the its predicitve aspect.</p>
