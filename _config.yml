@@ -177,7 +177,7 @@ collections:
   portfolio:
     output: true
     permalink: /:collection/:path/
-  testimonials:
+  talks:
     output: true
     permalink: /:collection/:path/
 
@@ -229,12 +229,12 @@ defaults:
       author_profile: true
       share: true
       comment: true
-  # _testimonials
+  # _talks
   - scope:
       path: ""
-      type: testimonials
+      type: talks
     values:
-      layout: testimonials
+      layout: talks
       author_profile: true
       share: true
       
