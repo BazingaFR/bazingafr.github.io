@@ -1,8 +1,8 @@
 ---
 title: "Analytics Blogger"
-collection: talks
+collection: testimonials
 type: "Big data consultant"
-permalink: /talks/2016-03-23-analytics-blogger-testimonial1
+permalink: /testimonials/2016-03-23-analytics-blogger-testimonial1
 venue: "visitor of Felipe's blog"
 date: 2016-03-23
 location: "Sydney, AUS"

@@ -1,8 +1,8 @@
 ---
 title: "Analytics Project Lead"
-collection: talks
+collection: testimonials
 type: "Analytics service provider"
-permalink: /talks/2017-03-01-analytical-lead-testimonial1
+permalink: /testimonials/2017-03-01-analytical-lead-testimonial1
 venue: "Felipe directly managed"
 date: 2017-03-17
 location: "Sydney, AUS"

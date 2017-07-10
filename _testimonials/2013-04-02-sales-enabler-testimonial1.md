@@ -1,8 +1,8 @@
 ---
 title: "Sales Enabler"
-collection: talks
+collection: testimonials
 type: "Sales Executive"
-permalink: /talks/2013-04-02-sales-enabler-testimonial1
+permalink: /testimonials/2013-04-02-sales-enabler-testimonial1
 venue: "partnered with Felipe"
 date: 2013-04-02
 location: "Sydney, AUS"

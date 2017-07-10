@@ -1,8 +1,8 @@
 ---
 title: "Analytics Instructor"
-collection: talks
+collection: testimonials
 type: "Data analytics student"
-permalink: /talks/2017-02-11-analytics-instructor-testimonial1
+permalink: /testimonials/2017-02-11-analytics-instructor-testimonial1
 venue: "Felipe taught"
 date: 2017-02-11
 location: "Sydney, AUS"

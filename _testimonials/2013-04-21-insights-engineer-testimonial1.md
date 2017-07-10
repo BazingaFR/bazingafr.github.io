@@ -1,8 +1,8 @@
 ---
 title: "Insights Engineer"
-collection: talks
+collection: testimonials
 type: "Head of Marketing"
-permalink: /talks/2013-04-21-insights-engineer-testimonial1
+permalink: /testimonials/2013-04-21-insights-engineer-testimonial1
 venue: "managed Felipe's team"
 date: 2013-07-05
 location: "Sydney, AUS"

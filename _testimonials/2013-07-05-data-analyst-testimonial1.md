@@ -1,8 +1,8 @@
 ---
 title: "Data Analyst"
-collection: talks
+collection: testimonials
 type: "Work colleague"
-permalink: /talks/2013-07-05-data-analyst-testimonial1
+permalink: /testimonials/2013-07-05-data-analyst-testimonial1
 venue: "in Felipe's team"
 date: 2013-07-05
 location: "Sydney, AUS"
