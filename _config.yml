@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Felipe Rego | Advanced Analytics and Data Visualisation | Insights | Strategy | Big Data | Machine Learning | Data Science"
+title                    : "Felipe Rego - Advanced Analytics and Data Visualisation | Insights | Strategy | Big Data | Machine Learning | Data Science"
 title_separator          : "-"
 name                     : &name "Felipe Rego"
 description              : &description "Data scientist, analytics instructor, statistical computing blogger, online learning devotee, open-source fan, M.Phil candidate, husband and father of two."
