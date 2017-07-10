@@ -13,7 +13,7 @@ name                     : &name "Felipe Rego"
 description              : &description "Data scientist, analytics instructor, statistical computing blogger, online learning devotee, open-source fan, M.Phil candidate, husband and father of two."
 url                      : https://bazingafr.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "BazingaFR/bazingafr.github.io"
+repository               : "bazingafr/bazingafr.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
@@ -77,13 +77,13 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Sidebar Name"
+  name             : "Felipe Rego"
   avatar           : "profile.png"
-  bio              : "Your biography for the left-hand sidebar"
-  location         : "Location"
+  bio              : "Data scientist, analytics instructor, statistical computing blogger, online learning devotee, open-source fan, M.Phil candidate, husband and father of two."
+  location         : "Sydney, Australia"
   employer         : 
-  googlescholar    : "http://yourfullgooglescholarurl.com"
-  email            : 
+  googlescholar    : 
+  email            : "fe_cr@hotmail.com"
   uri              : 
   bitbucket        :
   codepen          :
@@ -91,7 +91,7 @@ author:
   flickr           :
   facebook         : 
   foursquare       :
-  github           : "academicpages"
+  github           : "bazingafr"
   google_plus      :
   keybase          :
   instagram        : 
