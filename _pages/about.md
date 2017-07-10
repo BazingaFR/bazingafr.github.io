@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Predictive Analytics | Data Vsiualisation"
+title: "Predictive Analytics & Data Vsiualisation"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
