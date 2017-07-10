@@ -9,7 +9,7 @@
 locale                   : "en-US"
 title                    : "Felipe Rego"
 title_separator          : "-"
-name                     : &name "Felipe Rego"
+name                     : &name ""
 description              : &description "Data scientist, analytics instructor, statistical computing blogger, M.Phil candidate, husband and father of two."
 url                      : https://bazingafr.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
