@@ -1,7 +1,7 @@
 ---
 permalink: /
-title: "Predictive Analytics & Data Visualisation"
-excerpt: "About me"
+title: 
+excerpt: "Predictive Analytics & Data Visualisation"
 author_profile: true
 redirect_from: 
   - /about/
@@ -21,8 +21,6 @@ You can hire me
 ======
 
 I'm available for hire to consult, advise and/or develop advanced data analytics and visualisation solutions with marketing, sales, finance, technology and strategy teams across Australia.
-
-***
 
 
 
