@@ -4,6 +4,7 @@ excerpt: "Creating, executing and scaling a reporting and analytics solution for
 collection: portfolio
 tags:
   - ETL
+  - SQL
   - Alteryx
   - Tableau
   - Excel

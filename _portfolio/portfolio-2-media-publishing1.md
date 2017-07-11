@@ -2,6 +2,12 @@
 title: "Media and Publishing"
 excerpt: "Empowering sales teams and contact centres with interactive dashboards for operational performance improvement. <br/><img src='/images/media-publishing1.jpg'>"
 collection: portfolio
+tags:
+  - SQL
+  - Tableau
+  - Vertica
+  - R
+  - Interactive
 ---
 
 ### Situation
