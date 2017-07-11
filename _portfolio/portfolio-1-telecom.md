@@ -2,6 +2,13 @@
 title: "Telecom and Broadband"
 excerpt: "Creating, executing and scaling a reporting and analytics solution for a corporate finance team in the telco industry<br/><img src='/images/telco1.jpg'>"
 collection: portfolio
+tags:
+  - ETL
+  - Alteryx
+  - Tableau
+  - Excel
+  - Trello
+  - Agile
 ---
 
 ### Situation
