@@ -1,6 +1,13 @@
-# Time Series Forecasting in R with Google Analytics Data
-Felipe Rego  
-May, 2017  
+---
+title: 'Time Series Forecasting in R with Google Analytics Data'
+date: 2017-05-28
+permalink: /posts/2017/05/Time-Series-Google-Analytics/
+tags:
+  - Google Analytics
+  - Time-series
+  - Forecasting
+  - R
+---
 
 Data that are obtained in series of points over an equally spaced period of time are generally referred to as Time series data. Monthly retail sales, daily weather forecast, unemployment figures, consumer sentiment surveys, among many others, are classic examples of time series data. In fact, most variables in nature, science, business and many other applications rely on data that can be measured in a fixed time interval.
 
