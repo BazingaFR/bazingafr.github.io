@@ -1,7 +1,7 @@
 ---
 title: 'Time Series Forecasting in R with Google Analytics Data'
 date: 2017-05-28
-permalink: /posts/2017/05/Time-Series-Google-Analytics/
+permalink: /blog/2017/05/28/Time-Series-Google-Analytics/
 tags:
   - Google Analytics
   - Time-series
