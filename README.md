@@ -1,82 +1,178 @@
-Solid. A Bootstrap theme for Jekyll.
-============
-![Screenshot](https://st4ple.github.io/solid-jekyll/assets/img/browser.png)
+# Sparrow
 
-This is a [Jekyll](http://jekyllrb.com/) port of the [Solid theme](http://www.blacktie.co/2014/05/solid-multipurpose-theme/) by [blacktie.co](http://www.blacktie.co/). Visit the [live demo](https://st4ple.github.io/solid-jekyll/) for a preview. 
+[![Gem Version](https://badge.fury.io/rb/sparrow-jekyll-theme.svg)](https://badge.fury.io/rb/sparrow-jekyll-theme)
 
-##Usage
-This theme can be customized, built and published straight from GitHub, thanks to [GitHub Pages](https://pages.github.com/). A local installation of Jekyll isn't even necessary!
+A clean minimal Jekyll theme for writers. 
 
-[Fork this repository](https://github.com/st4ple/solid-jekyll/fork) to get started. 
-####Customize  
-Most general settings and data like site name, colors, address, etc. can be configured and changed right in the main config file: `/_config.yml`
-The content of the Home page can be changed here: `/home.html`
-The content of the About page can be changed here: `/about.html`
-The content of the Portfolio page can be changed here:`/portfolio.html`
-The content of the Contact page can be changed here:`/contact.html`
-####Add content  
-Delete the demo content and publish your own content.
-#####Blog post
-Create a Blog post by creating a file called `yyyy-mm-dd-name-of-post-like-this.markdown` in the `/_posts/blog/` directory with the following template:
-```markdown
----
-layout: post          #important: don't change this
-title: "Name of post like this"
-date: yyyy-mm-dd hh:mm:ss
-author: Name
-categories:
-- blog                #important: leave this here
-- category1
-- category2
-- ...
-img: post01.jpg       #place image (850x450) with this name in /assets/img/blog/
-thumb: thumb01.jpg    #place thumbnail (70x70) with this name in /assets/img/blog/thumbs/
----
-This text will appear in the excerpt "post preview" on the Blog page that lists all the posts.
-<!--more-->
-This text will not be shown in the excerpt because it is after the excerpt separator.
+[Live Demo](http://theconfused.me/sparrow)
+
+- [Features](#features)
+- [Why the name?](#why-the-name) 
+- [Install](#install)
+    - [General configuration](#general-configuration)
+    - [Disqus](#disqus)
+    - [Google analytics](#google-analytics)
+    - [Collections](#collections)
+    - [Pagination](#pagination)
+    - [Navigation](#navigation)
+    - [Front matter defaults](#front-matter-defaults)
+    - [Other](#other)
+- [Credits](#credits)
+
+## Screenshot 
+
+![](screenshot.png)
+
+## Features
+
+- Fully compatible with Github Pages
+- Configurable and responsive multi layer menu, adapted from [slimmenu](https://github.com/adnantopal/slimmenu)
+- Disqus integration
+- [Font Awesome icons](http://fontawesome.io/) included
+- Google analytics
+- Social sharing using [rrssb](https://www.rrssb.ml/)
+- 404 page included
+- Typographic optimization for Chinese fonts
+- Atom feed generated with [jekyll-feed](https://github.com/jekyll/jekyll-feed)
+- Pagination enabled for blog using [jekyll-paginate](https://github.com/jekyll/jekyll-paginate)
+- Basic SEO with Facebook Open Graph tags and Twitter cards
+
+## Why the name? 
+
+In Chinese there's a saying that goes 麻雀虽小，五脏俱全。It roughly translates to: small though a sparrow is, it possesses all internal organs. Small but complete is what this theme aspires to be. Minimal but includes all the essential aspects to building a blog. 
+
+## Install
+
+Just fork this repo and replace the posts with your own. Also rename the sample poetry collection to replace it with your own collection, or just delete it if you don't need to use collections. The example is poetry, but you can easily revamp this into essays, short stories, portfolio, or whatever your creative work is. 
+
+OR you can also install this theme as a theme gem. To do that, add to your Gemfile: 
+
+```ruby
+gem "sparrow-jekyll-theme"
 ```
-#####Project post
-Create a Project post to go in your Portfolio by creating a file called `yyyy-mm-dd-name-of-the-project.markdown` in the `/_posts/project/` directory with the following template:
-```markdown
----
-layout: project       #important: don't change this
-title:  "Name of the project"
-date: yyyy-mm-dd hh:mm:ss
-author: Name
-categories:
-- project             #important: leave this here
-img: portfolio_10.jpg #place image (600x450) with this name in /assets/img/project/
-thumb: thumb02.jpg
-carousel:
-- single01.jpg        #place image (1280x600) with this name in /assets/img/project/carousel/
-- single02.jpg  
-- ...
-client: Company XY
-website: http://www.internet.com
----
-####This is a heading
-This is a regular paragraph. Write as much as you like.
-```
-#####Question entry
-Create a Question entry (that is listed in the Frequently Asked section on the Home page) in this directory by creating a file called `yyyy-mm-dd-do-i-have-a-question.markdown` in the `/_posts/project/` directory with the following template:
-```markdown
----
-layout: question
-title:  "Do I have a question?"
-date: yyyy-mm-dd hh:mm:ss
-author: First Last
-categories:
-- question            #important: leave this here
----
-####Can I use this theme for my website?
-Of course you can!
-```
-####Publish
-To publish with [GitHub Pages](https://pages.github.com/), simply create a branch called `gh-pages`in your repository. GitHub will build your site automatically and publish it at `http://yourusername.github.io/repositoryname/`.  
-If there are problems with loading assets like CSS files and images, make sure that the `baseurl` in the `_config.yml`is set correctly (it should say `/repositoryname`).
 
-If you want to host your website somewhere else than GitHub (or just would like to customize and build your site locally), please check out the [Jekyll documentation](http://jekyllrb.com/). 
+And add this line site's `_config.yml`: 
 
-##License
-This theme is licensed under [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/).
+```yaml
+theme: sparrow-jekyll-theme
+```
+
+And then do `bundle install`. 
+
+To run your site locally, do `bundle exec jekyll serve`. 
+
+For customization, see below. 
+
+### General configuration
+
+Customize these values in the `_config.yml` file: 
+
+```yaml
+title                    : "Sparrow"
+title_separator          : "-"
+description              : "A clean and minimal theme for writers."
+favicon                  : "/assets/images/bird.png"
+avatar                   : "/assets/images/bird.png"
+url                      : "https://theconfused.me" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+baseurl                  : "/sparrow" 
+
+# Site Author
+author:
+  name                   : "Lingyi" # appears in the footer and atom feed
+```
+
+
+### Disqus
+
+To activate Disqus, fill in your disqus shortname: 
+
+```yaml
+comments                 : true # set it to false to disable comments
+disqus:
+  shortname              : your_shortname
+```
+
+### Google analytics
+
+Enable google analytics by filling in your tracking ID: 
+
+```yaml
+analytics:
+  google:
+    tracking_id          : # add your google tracking id here
+```
+
+### Collections
+
+If you are using collections, be sure to replace this with your collection name: 
+
+```yaml
+collections:
+  poetry:
+    output: true
+    permalink: /:collection/:title/
+```
+
+### Pagination
+
+Currently, pagination is set to a the blog page. Unfortunately Jekyll does not yet support pagination on multiple pages. 
+
+If you want to paginate on a different page, simply change the `paginate_path` value in the config file and create the relevant page. 
+
+```yaml
+paginate: 5 # amount of posts to show
+paginate_path: "/blog/page:num/"
+timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+```
+
+### Navigation
+
+You can change the navigation links in `_data/navigation.yml`.
+
+### Front matter defaults
+
+At the bottom of the config file, you can also set [front matter defaults](https://jekyllrb.com/docs/configuration/#front-matter-defaults) so that you don't have to repeat the same front matter for every post. This is an example: 
+
+```yaml
+# Front matter defaults
+defaults:
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: page
+      comments: false
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      comments: true
+      share: true
+  # _poetry
+  - scope:
+      path: ""
+      type: poetry
+    values:
+      layout: post
+      share: false
+```
+
+### Other
+
+To enhance SEO, you can add your twitter username to `_config.yml`. 
+
+You can also add a image path for the `og_image` value in the config file, for a default open graph sharing image. This value can be overridden in individual posts. 
+
+For the various config options see the [sample config file for the demo site](https://github.com/lingxz/sparrow/blob/master/_config.yml)
+
+There are also helper classes for ease of inserting image and their captions, adapted from the [Minimal Mistakes theme by Michael Rose](https://github.com/mmistakes/minimal-mistakes). You can find a [sample post with images](https://theconfused.me/sparrow/blog/post-with-image/) on the [demo site](https://theconfused.me/sparrow). 
+
+The color schemes and fonts can also be customized through scss, by editing the relevant variable in `_variables.scss`. 
+
+## Credits
+
+- Bird icon made by [Freepik](http://www.freepik.com) from [Flaticon](http://www.flaticon.com) and is licensed by [CC 3.0 BY](http://creativecommons.org/licenses/by/3.0/).
+- Photos from [Unsplash](https://unsplash.com/)
