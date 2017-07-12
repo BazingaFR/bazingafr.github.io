@@ -2,37 +2,12 @@
    BASE ELEMENTS
    ========================================================================== */
 
-%tab-focus {
-  /* Default*/
-  outline: thin dotted #f89406;
-  /* Webkit*/
-  outline: 5px auto #f89406;
-  outline-offset: -2px;
-}
-
-@mixin clearfix {
-  clear: both;
-
-  &::after {
-    clear: both;
-    content: "";
-    display: table;
-  }
-}
-
-html {
-  /* sticky footer fix */
-  position: relative;
-  min-height: 100%;
-}
-
 body {
   margin: 0;
   padding: 0;
   color: $text-color;
   font-family: $global-font-family;
   line-height: 1.5;
-  color: $text-color;
 
   &.overflow--hidden {
     /* when primary navigation is visible, the content in the background won't scroll */
@@ -41,10 +16,10 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin: 1em 0 0.5em;
+  margin: 2em 0 0.5em;
   line-height: 1.2;
   font-family: $header-font-family;
-  font-weight: normal;
+  font-weight: bold;
 }
 
 h1 {
@@ -53,27 +28,27 @@ h1 {
 }
 
 h2 {
-  font-size: $type-size-3;
+  font-size: $type-size-4;
 }
 
 h3 {
-  font-size: $type-size-4;
+  font-size: $type-size-5;
 }
 
 h4 {
-  font-size: $type-size-4;
+  font-size: $type-size-6;
 }
 
 h5 {
-  font-size: $type-size-4;
+  font-size: $type-size-6;
 }
 
 h6 {
-  font-size: $type-size-4;
+  font-size: $type-size-6;
 }
 
 small, .small {
-  font-size: $type-size-7;
+  font-size: $type-size-6;
 }
 
 p {
@@ -112,45 +87,25 @@ abbr[data-original-title] {
 /* blockquotes */
 
 blockquote {
-  background: $blockquote-background-color;
-  border-radius: 1em;
-  padding: 1em 3em;
-  margin: 1em;
-  position: relative;
-}
-
-blockquote:before {
-  font-family: Georgia, serif;
+  margin: 2em 1em 2em 0;
+  padding-left: 1em;
+  padding-right: 1em;
   font-style: italic;
-  display: block;
-  content: "\201C";
-  font-size: 7em;
-  position: absolute;
-  left: -0.2em;
-  top: -0.2em;
-  color: #7a7a7a;
-}
+  border-left: 0.25em solid $primary-color;
 
-blockquote cite {
-  color: #999999;
-  font-size: 0.9em;
-  display: block;
-  margin-top: 5px;
-  text-align: right;
-}
- 
-blockquote cite:before {
-  content: "\2014 \2009";
-}
+  cite {
+    font-style: italic;
 
-blockquote p:last-child {
-  margin: 0;
+    &:before {
+      content: "\2014";
+      padding-right: 5px;
+    }
+  }
 }
 
 /* links */
 
 a {
-  text-decoration: none;
   &:focus {
     @extend %tab-focus;
   }
@@ -159,9 +114,6 @@ a {
   &:active {
     outline: 0;
   }
-  
-  &:hover { color: $link-color-hover; }
-  &:hover > image { opacity: 0.7; }
 }
 
 /* code */
@@ -181,9 +133,11 @@ figcaption > code,
 td > code {
   padding-top: 0.1rem;
   padding-bottom: 0.1rem;
+  font-size: $type-size-6;
   background: $code-background-color;
-  border: 1px solid $border-color;
+  border: 1px solid $lighter-gray;
   border-radius: $border-radius;
+  box-shadow: $box-shadow;
 
   &:before, &:after {
     letter-spacing: -0.2em;
@@ -283,7 +237,7 @@ figcaption {
   a {
     color: inherit;
     text-decoration: none;
-    border-bottom: 1px solid $border-color;
+    border-bottom: 1px solid $light-gray;
     -webkit-transition: $global-transition;
     transition: $global-transition;
 
@@ -301,6 +255,7 @@ svg:not(:root) {
   overflow: hidden;
 }
 
+
 /*
    Navigation lists
    ========================================================================== */
@@ -317,7 +272,7 @@ svg:not(:root) {
  *    </ul>
  *  </nav>
  */
- 
+
 nav {
   ul {
     margin: 0;
@@ -348,12 +303,7 @@ nav {
    Global animation transition
    ========================================================================== */
 
-
-b, i, strong, em, blockquote, p, q, span, figure, img, h1, h2, header, input, a, tr, td, form button, textarea, input[type="submit"], .btn, .highlight, .archive__item-teaser {
+b, i, strong, em, blockquote, p, q, span, figure, img, h1, h2, header, input, a, tr, td, form button, input[type="submit"], .btn, .highlight, .archive__item-teaser {
   -webkit-transition: $global-transition;
   transition: $global-transition;
-}
-
-input, textarea, input[type="submit"] {
-  font-family: $global-font-family;
 }

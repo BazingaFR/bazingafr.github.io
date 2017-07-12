@@ -1,0 +1,28 @@
+---
+permalink: /
+title: 
+excerpt: "Predictive Analytics & Data Visualisation"
+author_profile: true
+redirect_from: 
+  - /about/
+  - /about.html
+---
+
+Hi there, I'm Felipe. I'm a data scientist and visualisation consultant. I help companies from a variety of industries and sizes acquire, manage and translate highly complex data and analytical concepts into strategically-aligned, commercially-oriented, customer-centred solutions.
+
+When I'm not helping clients, I'm an analytics instructor helping disseminate practical, actionable analytics and data visualisation techniques in classrooms or online.
+
+When I'm not helping clients or students, I'm an M.Phil. research candidate in Learning Analytics at the University of Sydney making sense of students' digital traces and the role learning analytics dashboards for self-assessment play in influencing learning outcomes.
+
+I'm also a blogger in predictive analytics, statistical learning and data visualisation, a husband and a father of two.
+
+
+You can hire me
+======
+
+I'm available for hire to consult, advise and/or develop advanced data analytics and visualisation solutions with marketing, sales, finance, technology and strategy teams across Australia.
+
+
+
+
+
