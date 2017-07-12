@@ -1,65 +1,82 @@
-<p align="center">
-    <h2 align="center">Indigo Minimalist Jekyll Template - <a href="http://sergiokopplin.github.io/indigo/">Demo</a> · <a href="https://travis-ci.org/sergiokopplin/indigo"><img src="https://camo.githubusercontent.com/5393485b732749b3499264168fa8af60166071e8/68747470733a2f2f7472617669732d63692e6f72672f73657267696f6b6f70706c696e2f696e6469676f2e7376673f6272616e63683d67682d7061676573" alt="Build Status" data-canonical-src="https://travis-ci.org/sergiokopplin/indigo.svg?branch=gh-pages" style="max-width:100%;"></a></h2>
-</p>
+Solid. A Bootstrap theme for Jekyll.
+============
+![Screenshot](https://st4ple.github.io/solid-jekyll/assets/img/browser.png)
 
-<p align="center">This is a simple and minimalist template for Jekyll for those who likes to eat noodles.</p>
+This is a [Jekyll](http://jekyllrb.com/) port of the [Solid theme](http://www.blacktie.co/2014/05/solid-multipurpose-theme/) by [blacktie.co](http://www.blacktie.co/). Visit the [live demo](https://st4ple.github.io/solid-jekyll/) for a preview. 
 
-***
+##Usage
+This theme can be customized, built and published straight from GitHub, thanks to [GitHub Pages](https://pages.github.com/). A local installation of Jekyll isn't even necessary!
 
-<p align="center">
-    <b><a href="README.md#what-has-inside">What has inside</a></b>
-    |
-    <b><a href="README.md#setup">Setup</a></b>
-    |
-    <b><a href="README.md#settings">Settings</a></b>
-    |
-    <b><a href="README.md#how-to">How to</a></b>
-</p>
-
-<p align="center">
-    <img src="https://raw.githubusercontent.com/sergiokopplin/indigo/gh-pages/assets/screen-shot.png" />
-</p>
-
-## What has inside
-
-- [Jekyll](https://jekyllrb.com/), [Sass](http://sass-lang.com/) ~[RSCSS](http://rscss.io/)~ and [SVG](https://www.w3.org/Graphics/SVG/)
-- Tests with [Travis](https://travis-ci.org/)
-- Google Speed: [98/100](https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fsergiokopplin.github.io%2Findigo%2F);
-- No JS. :sunglasses:
-
-## Setup
-
-0. :star: to the project. :metal:
-2. Fork the project [Indigo](https://github.com/sergiokopplin/indigo/fork)
-3. Edit `_config.yml` with your data (check <a href="README.md#settings">settings</a> section)
-4. Write some posts :bowtie:
-
-If you want to test locally on your machine, do the following steps also:
-
-1. Install [Jekyll](http://jekyllrb.com), [NodeJS](https://nodejs.org/) and [Bundler](http://bundler.io/).
-2. Clone the forked repo on your machine
-3. Enter the cloned folder via terminal and run `bundle install`
-4. Then run `bundle exec jekyll serve --config _config.yml,_config-dev.yml`
-5. Open it in your browser: `http://localhost:4000`
-6. Test your app with `bundle exec htmlproofer ./_site`
-
-## Settings
-
-You must fill some informations on `_config.yml` to customize your site.
-
-```
-name: John Doe
-bio: 'A Man who travels the world eating noodles'
-picture: 'assets/images/profile.jpg'
-...
-
-and lot of other options, like width, projects, pages, read-time, tags, related posts, animations, multiple-authors, etc.
-```
-
-## How To?
-
-Check the [FAQ](./FAQ.md) if you have any doubt or problem.
-
+[Fork this repository](https://github.com/st4ple/solid-jekyll/fork) to get started. 
+####Customize  
+Most general settings and data like site name, colors, address, etc. can be configured and changed right in the main config file: `/_config.yml`
+The content of the Home page can be changed here: `/home.html`
+The content of the About page can be changed here: `/about.html`
+The content of the Portfolio page can be changed here:`/portfolio.html`
+The content of the Contact page can be changed here:`/contact.html`
+####Add content  
+Delete the demo content and publish your own content.
+#####Blog post
+Create a Blog post by creating a file called `yyyy-mm-dd-name-of-post-like-this.markdown` in the `/_posts/blog/` directory with the following template:
+```markdown
 ---
+layout: post          #important: don't change this
+title: "Name of post like this"
+date: yyyy-mm-dd hh:mm:ss
+author: Name
+categories:
+- blog                #important: leave this here
+- category1
+- category2
+- ...
+img: post01.jpg       #place image (850x450) with this name in /assets/img/blog/
+thumb: thumb01.jpg    #place thumbnail (70x70) with this name in /assets/img/blog/thumbs/
+---
+This text will appear in the excerpt "post preview" on the Blog page that lists all the posts.
+<!--more-->
+This text will not be shown in the excerpt because it is after the excerpt separator.
+```
+#####Project post
+Create a Project post to go in your Portfolio by creating a file called `yyyy-mm-dd-name-of-the-project.markdown` in the `/_posts/project/` directory with the following template:
+```markdown
+---
+layout: project       #important: don't change this
+title:  "Name of the project"
+date: yyyy-mm-dd hh:mm:ss
+author: Name
+categories:
+- project             #important: leave this here
+img: portfolio_10.jpg #place image (600x450) with this name in /assets/img/project/
+thumb: thumb02.jpg
+carousel:
+- single01.jpg        #place image (1280x600) with this name in /assets/img/project/carousel/
+- single02.jpg  
+- ...
+client: Company XY
+website: http://www.internet.com
+---
+####This is a heading
+This is a regular paragraph. Write as much as you like.
+```
+#####Question entry
+Create a Question entry (that is listed in the Frequently Asked section on the Home page) in this directory by creating a file called `yyyy-mm-dd-do-i-have-a-question.markdown` in the `/_posts/project/` directory with the following template:
+```markdown
+---
+layout: question
+title:  "Do I have a question?"
+date: yyyy-mm-dd hh:mm:ss
+author: First Last
+categories:
+- question            #important: leave this here
+---
+####Can I use this theme for my website?
+Of course you can!
+```
+####Publish
+To publish with [GitHub Pages](https://pages.github.com/), simply create a branch called `gh-pages`in your repository. GitHub will build your site automatically and publish it at `http://yourusername.github.io/repositoryname/`.  
+If there are problems with loading assets like CSS files and images, make sure that the `baseurl` in the `_config.yml`is set correctly (it should say `/repositoryname`).
 
-[MIT](http://kopplin.mit-license.org/) License © Sérgio Kopplin
+If you want to host your website somewhere else than GitHub (or just would like to customize and build your site locally), please check out the [Jekyll documentation](http://jekyllrb.com/). 
+
+##License
+This theme is licensed under [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/).
