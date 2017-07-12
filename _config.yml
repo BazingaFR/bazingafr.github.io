@@ -1,19 +1,19 @@
 # Site Settings
 encoding                 : "utf-8"
 locale                   : "en"
-title                    : "Sparrow"
+title                    : "Felipe Rego"
 title_separator          : "-"
-description              : "A clean and minimal theme for writers."
+description              : "Helping teams build, manage and improve analytics and data visualisation in their organisations"
 favicon                  : "/assets/images/bird.png"
 avatar                   : "/assets/images/bird.png"
-url                      : "https://theconfused.me" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : "/sparrow" # the subpath of your site, e.g. "/blog" leave blank if no subpath
+url                      : "https://bazingafr.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+baseurl                  :  # the subpath of your site, e.g. "/blog" leave blank if no subpath
 
 # Site Author
 author:
-  name                   : "Lingyi" # appears in the footer and atom feed
+  name                   : "Felipe Rego based on the work of Lingyi" # appears in the footer and atom feed
 
-comments                 : true # set it to false to disable comments
+comments                 : false # set it to false to disable comments
 disqus:
   shortname              : # sparrow-theme # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
 
@@ -24,7 +24,7 @@ og_image                 : "/assets/images/bird.png" # Open Graph/Twitter defaul
 
 # Social sharing
 twitter:
-  username               : # optional, for social sharing
+  username               : "FelipeRego"# optional, for social sharing
 
 # Analytics
 analytics:
@@ -72,7 +72,7 @@ sass:
 permalink: /blog/:title/
 paginate: 5 # amount of posts to show
 paginate_path: "/blog/page:num/"
-timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: "Sydney, Australia" # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 collections:
   poetry:
