@@ -7,10 +7,6 @@ layout: default
   <h1>{% include twitter.html %} {% include linkedin.html %}</h1>
 
   <div class="entry">
-	{% for post in site.posts %}
-		<li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
-	{% endfor %}
-
     {{ content }}
   </div>
 
