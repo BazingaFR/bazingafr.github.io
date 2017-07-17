@@ -114,7 +114,7 @@ Residual Standard Error is measure of the *quality* of a linear regression fit. 
 
 The R-squared statistic ($R^2$) provides a measure of how well the model is fitting the actual data. It takes the form of a proportion of variance. The R2 is a measure of the linear relationship between our predictor variable (speed) and our response / target variable (dist). It always lies between 0 and 1 (i.e.: a number near 0 represents a regression that does not explain the variance in the response variable well and a number close to 1 does explain the observed variance in the response variable). In our example, the $R^2$ we get is 0.6510794. Or roughly 65% of the variance found in the response variable (dist) can be explained by the predictor variable (speed). Step back and think: If you were able to choose any metric to predict distance required for a car to stop, would speed be one and would it be an important one that could help explain how distance would vary based on speed? I guess it’s easy to see that the answer would almost certainly be a yes. That why we get a relatively strong $R^2$. Nevertheless, it’s hard to define what level of $R^2$ is appropriate to claim the model fits well. Essentially, it will vary with the application and the domain studied.
 
-A side note: In multiple regression settings, the (\R^2\) will always increase as more variables are included in the model. That’s why the adjusted $R^2$ is the preferred measure as it adjusts for the number of variables considered.
+A side note: In multiple regression settings, the ($\R^2\$) will always increase as more variables are included in the model. That’s why the adjusted $R^2$ is the preferred measure as it adjusts for the number of variables considered.
 
 **F-Statistic**
 
