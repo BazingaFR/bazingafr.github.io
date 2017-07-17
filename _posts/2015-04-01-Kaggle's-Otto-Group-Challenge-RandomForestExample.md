@@ -1,5 +1,5 @@
 ---
-title: 'Kaggle's Otto Group Challenge - An initial Random Forest approach'
+title: 'Kaggle Otto Group Challenge - An initial Random Forest approach'
 layout: post
 date: 2016-04-01
 permalink: /blog/2015/04/01/Kaggle's-Otto-Group-Challenge-RandomForestExample
