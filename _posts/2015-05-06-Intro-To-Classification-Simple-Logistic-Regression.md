@@ -169,7 +169,7 @@ Accounts from this training data set make an average of 1.5424 calls, with the m
 
 For this dataset, logistic regression will model the probability a customer will churn. So considering the predictor *Number of Customer Service Calls*  - which here we are assuming it relates to the number of calls an account made to customer service centre to complain about something - the probability of churn is given by:
 
-**Pr(churn = yes | Number of Customer Service Calls)**
+**Pr(churn = yes given Number of Customer Service Calls)**
 
 And this probability will range between 0 and 1 (and nothing outside of these values). So for any range of account length value, a prediction can be made for churn.
 
