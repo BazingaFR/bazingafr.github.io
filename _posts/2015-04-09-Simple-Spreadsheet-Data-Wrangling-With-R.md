@@ -42,12 +42,14 @@ The next step here is to load the files saved:
 ``` r 
 # Load excel files downloaded
 file2012 = readWorksheetFromFile('2012_EarningsSurveyByOccupation.xls',
-                                 sheet='Table_1', region='A08:F360', header=FALSE, keep=c(1,6))
+                                 sheet='Table_1', region='A08:F360', 
+                                 header=FALSE, keep=c(1,6))
 names(file2012) = c('UnitGroupDescr', '2012')
 file2012[is.na(file2012)] = 0
 
 file2014 = readWorksheetFromFile('2014_EarningsSurveyByOccupation.xls',
-                                 sheet='Table_1', region='A08:G363', header=FALSE, keep=c(1,4))
+                                 sheet='Table_1', region='A08:G363', 
+                                 header=FALSE, keep=c(1,4))
 names(file2014) = c('UnitGroupDescr', '2014')
 file2014[is.na(file2014)] = 0
 ```
@@ -60,7 +62,8 @@ Next step is to consolidate both files by merging them using the **merge** funct
 
 ``` r
 # Consolidate both files in one master file
-consolFile = merge(file2012, file2014, by='UnitGroupDescr', all.x=TRUE, all.y=TRUE)
+consolFile = merge(file2012, file2014, by='UnitGroupDescr', 
+					all.x=TRUE, all.y=TRUE)
 consolFile[is.na(consolFile)] = 0
 ```
 
