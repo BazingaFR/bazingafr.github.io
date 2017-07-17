@@ -3148,7 +3148,7 @@ hist(rmse, density=35, main = "Test RMSE over 100 Samples", xlab = "Value of Obt
 abline(v=mean(rmse), lwd=3, col="red")
 ```
 
-![](https://github.com/BazingaFR/bazingafr.github.io/raw/master/images/ResamplingValidationSet_files/figure-html/unnamed-chunk-7-1.png)<!-- -->
+![](https://github.com/BazingaFR/bazingafr.github.io/raw/master/images/ResamplingValidationSet_files/figure-html/unnamed-chunk-8-1.png)<!-- -->
 
 The histogram above highlights (the vertical red line) the average RMSE across 100 different samples as well as the spread in which the RMSE can reach. The RMSE of the income variable we got from this resampling example ranges from **$1,606** to **$3,695**. These are moderately high RMSE values.
 
