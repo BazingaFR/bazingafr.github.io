@@ -237,7 +237,26 @@ Let's look at both the model output and the plot above:
 
 - We initially fit a logistic regression model using the generalized linear model function to predict churn relative to the number of customer service calls using **glm()** with the binomial family. Generalized linear models are an adaptation of the linear regression model which allows for the response variable to have distributions other than the normal distribution. Each outcome of the response variable, in this case, churn is assumed to be generated from a particular distribution in the exponential family (binomial, gamma, Poisson, etc.)
 
-- The model output table shows somewhat similar structure to the ones we've seen in linear regression. Note the response variable (churn) is in log odds, so the coefficient of *Number of Customer Service Calls* can be interpreted as "for every additional customer service call made by an account, the odds of that account will churn increases by e^{B1} = **1.4844369** times. \$$ 5 + 5 $$ "
+- The model output table shows somewhat similar structure to the ones we've seen in linear regression. Note the response variable (churn) is in log odds, so the coefficient of *Number of Customer Service Calls* can be interpreted as "for every additional customer service call made by an account, the odds of that account will churn increases by $e^{B1}$ = **1.4844369** times".
+
+
+$$
+\begin{align*}
+  & \phi(x,y) = \phi \left(\sum_{i=1}^n x_ie_i, \sum_{j=1}^n y_je_j \right)
+  = \sum_{i=1}^n \sum_{j=1}^n x_i y_j \phi(e_i, e_j) = \\
+  & (x_1, \ldots, x_n) \left( \begin{array}{ccc}
+      \phi(e_1, e_1) & \cdots & \phi(e_1, e_n) \\
+      \vdots & \ddots & \vdots \\
+      \phi(e_n, e_1) & \cdots & \phi(e_n, e_n)
+    \end{array} \right)
+  \left( \begin{array}{c}
+      y_1 \\
+      \vdots \\
+      y_n
+    \end{array} \right)
+\end{align*}
+$$
+
 
 - Both the **Null deviance** and **Residual deviance** help us assess model performance. Null deviance shows how well the response (churn) is predicted by a model with nothing but an intercept. The number is pretty high and indicates a poor fit. The Residual deviance shows how well the response is predicted by the model when the predictor *Number of Customer Service Calls* is included. Here we see that the decline in deviance is an evidence of an improved model fit. (One could argue the difference is really not significant.)
 
