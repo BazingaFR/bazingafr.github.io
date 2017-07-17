@@ -33,7 +33,8 @@ Below is a scatterplot of the variables:
 
 
 ```r
-plot(cars, col='blue', pch=20, cex=2, main="Relationship between Speed and Stopping Distance for 50 Cars", xlab="Speed in mph", ylab="Stopping Distance in feet")
+plot(cars, col='blue', pch=20, cex=2, main="Relationship between Speed and Stopping Distance for 50 Cars",
+	xlab="Speed in mph", ylab="Stopping Distance in feet")
 ```
 
 ![](https://github.com/BazingaFR/bazingafr.github.io/raw/master/images/lm_output_files/figure-html/unnamed-chunk-2-1.png)<!-- -->
@@ -112,7 +113,7 @@ Residual Standard Error is measure of the *quality* of a linear regression fit. 
 
 **Multiple R-squared, Adjusted R-squared**
 
-The R-squared statistic provides a measure of how well the model is fitting the actual data. It takes the form of a proportion of variance. The R2 is a measure of the linear relationship between our predictor variable (speed) and our response / target variable (dist). It always lies between 0 and 1 (i.e.: a number near 0 represents a regression that does not explain the variance in the response variable well and a number close to 1 does explain the observed variance in the response variable). In our example, the r-squared we get is 0.6510794. Or roughly 65% of the variance found in the response variable (dist) can be explained by the predictor variable (speed). Step back and think: If you were able to choose any metric to predict distance required for a car to stop, would speed be one and would it be an important one that could help explain how distance would vary based on speed? I guess it’s easy to see that the answer would almost certainly be a yes. That why we get a relatively strong r-squared. Nevertheless, it’s hard to define what level of r-squared is appropriate to claim the model fits well. Essentially, it will vary with the application and the domain studied.
+The R-squared statistic provides a measure of how well the model is fitting the actual data. It takes the form of a proportion of variance. r-squared is a measure of the linear relationship between our predictor variable (speed) and our response / target variable (dist). It always lies between 0 and 1 (i.e.: a number near 0 represents a regression that does not explain the variance in the response variable well and a number close to 1 does explain the observed variance in the response variable). In our example, the r-squared we get is 0.6510794. Or roughly 65% of the variance found in the response variable (dist) can be explained by the predictor variable (speed). Step back and think: If you were able to choose any metric to predict distance required for a car to stop, would speed be one and would it be an important one that could help explain how distance would vary based on speed? I guess it’s easy to see that the answer would almost certainly be a yes. That why we get a relatively strong r-squared. Nevertheless, it’s hard to define what level of r-squared is appropriate to claim the model fits well. Essentially, it will vary with the application and the domain studied.
 
 A side note: In multiple regression settings, the r-squared will always increase as more variables are included in the model. That’s why the adjusted r-squared is the preferred measure as it adjusts for the number of variables considered.
 
