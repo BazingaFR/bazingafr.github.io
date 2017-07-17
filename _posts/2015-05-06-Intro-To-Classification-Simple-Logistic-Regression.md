@@ -11,7 +11,7 @@ tags:
 ---
 
 
-In many situatio  ns in statistical learning, the response variable you want to predict in your dataset is not quantitative (for example, height or weight of individuals). Sometimes, the response variable is instead **qualitative** (Female / Male are an example of a qualitative data).
+In many situations in statistical learning, the response variable you want to predict in your dataset is not quantitative (for example, height or weight of individuals). Sometimes, the response variable is instead **qualitative** (Female / Male are an example of a qualitative data).
 
 When we study approaches for predicting qualitative responses, we study classification problems. Classification because, in these situations, we are in fact classifying an observation, and allocating it to a specific class or category (is it Female or Male?, is it Blue, Red or Green?, etc.).
 
@@ -29,7 +29,8 @@ Let's start by loading the necessary packages and downloading the dataset:
 library(ggplot2)
 
 # load both the variable names file and the variable values file
-varNms = read.csv("http://www.sgi.com/tech/mlc/db/churn.names", skip=4, header=FALSE,
+varNms = read.csv("http://www.sgi.com/tech/mlc/db/churn.names", 
+               skip=4, header=FALSE,
                sep=":", colClasses=c("character", "NULL"))[[1]]
 
 print(varNms)
@@ -49,7 +50,8 @@ print(varNms)
 ```
 
 ```r
-dt = read.csv("http://www.sgi.com/tech/mlc/db/churn.all", header=FALSE, col.names=c(varNms,"churn"))
+dt = read.csv("http://www.sgi.com/tech/mlc/db/churn.all",
+              header=FALSE, col.names=c(varNms,"churn"))
 print(head(dt))
 ```
 
@@ -110,14 +112,15 @@ Let's create a train and test set for this data so we can train our model and th
 dt = dt[c(20, 21)]
 
 # recode target variable into zeros and ones
-dt$churn = ifelse(as.numeric(dt$churn) == 1, 0, ifelse(as.numeric(dt$churn) == 2, 1,NA))
+dt$churn = ifelse(as.numeric(dt$churn) == 1, 0,
+                  ifelse(as.numeric(dt$churn) == 2, 1,NA))
 
-# create a train and test set with a sample of 75% of the 5000 records as train and 25% as test.
+# create a train and test set with a sample of 75%
+# of the 5000 records as train and 25% as test.
 set.seed(123)
 trainRows = sample(1:nrow(dt), 0.75*nrow(dt))
 tr_dt = dt[trainRows, ]
 te_dt = dt[-trainRows, ]
-
 
 # inspect data frame
 str(tr_dt)
@@ -234,7 +237,7 @@ Let's look at both the model output and the plot above:
 
 - We initially fit a logistic regression model using the generalized linear model function to predict churn relative to the number of customer service calls using **glm()** with the binomial family. Generalized linear models are an adaptation of the linear regression model which allows for the response variable to have distributions other than the normal distribution. Each outcome of the response variable, in this case, churn is assumed to be generated from a particular distribution in the exponential family (binomial, gamma, Poisson, etc.)
 
-- The model output table shows somewhat similar structure to the ones we've seen in linear regression. Note the response variable (churn) is in log odds, so the coefficient of *Number of Customer Service Calls* can be interpreted as "for every additional customer service call made by an account, the odds of that account will churn increases by $e^{B1}$ = **1.4844369** times."
+- The model output table shows somewhat similar structure to the ones we've seen in linear regression. Note the response variable (churn) is in log odds, so the coefficient of *Number of Customer Service Calls* can be interpreted as "for every additional customer service call made by an account, the odds of that account will churn increases by $$e^{B1}$$ = **1.4844369** times."
 
 - Both the **Null deviance** and **Residual deviance** help us assess model performance. Null deviance shows how well the response (churn) is predicted by a model with nothing but an intercept. The number is pretty high and indicates a poor fit. The Residual deviance shows how well the response is predicted by the model when the predictor *Number of Customer Service Calls* is included. Here we see that the decline in deviance is an evidence of an improved model fit. (One could argue the difference is really not significant.)
 
