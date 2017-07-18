@@ -31,6 +31,7 @@ Marketing, sales or operations teams spend an awful lot of time planning their a
 ![](https://github.com/BazingaFR/bazingafr.github.io/raw/master/images/github_logo.png)
 ![](https://github.com/BazingaFR/bazingafr.github.io/raw/master/images/jupyter_logo.png)
 ![](https://github.com/BazingaFR/bazingafr.github.io/raw/master/images/anaconda_logo.png)
+![](https://github.com/BazingaFR/bazingafr.github.io/raw/master/images/google_analytics_logo.png)
 
 
 
