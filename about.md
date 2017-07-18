@@ -26,7 +26,7 @@ Marketing, sales or operations teams spend an awful lot of time planning their a
 
 ***
 **as images or logos**
-![]()
+![](https://github.com/BazingaFR/bazingafr.github.io/raw/master/images/python_logo.png)
 
 
 # Skills, Expertise and Interests
