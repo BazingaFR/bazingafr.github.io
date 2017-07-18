@@ -8,9 +8,14 @@ As a data science partner, companies leverage my skills to help their teams buil
 
 With an extensive and varied industry experience as well as a deep, practical technical expertise, I am often required by marketing, sales, finance, technology and strategy teams to provide support and delivery of analytics-driven business insights that are easy to use, easy to undestand and actionable.
 
-See below what some of my clients and partner have said about my work:
 
-***Leading an reporting solutions project for a corporate finance team***
+### Interactive Dashboards for Business Insights###
+Marketing, sales or operations teams spend an awful lot of time planning their activities and are constantly under pressure to make their customers happy, the performance of their products optimal and the quality of their services unique. More often than not though, these teams will have very little time to gather the sometimes sparse and unstructured data available on their activities to create meaningful, actionable insights platforms to help them react.
+
+
+See what some of my clients and partner have said about my work:
+
+***Leading a reporting solutions project for a corporate finance team***
 
 ***
 
@@ -20,7 +25,3 @@ See below what some of my clients and partner have said about my work:
 
 ***
 
-
-
-
-While I excel in managing analytical projects end-to-end and nurturing high-performing analytical teams, I am also technically engaged in implementing analytical solutions. From performing robust exploratory analyses of customer behavior, to developing predictive models around customer churn and next best offers as well as highly interactive dashboard visualisations about customer or product performance.
