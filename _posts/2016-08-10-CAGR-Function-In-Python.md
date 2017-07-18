@@ -28,7 +28,7 @@ From the formula above you can see that to compute CAGR, you need three paramete
 
 Note in the formula above that it contains an exponential term. This term helps offset any volatility over the period analysed and it assumes the values or quantities are compounded over the period of time. In essence, CAGR is a metric that describes the growth rate of a value or unit over a period of time if it had grown at a steady rate.
 
-For example, let's imagine you invested $\$$1,000 of your money in a bunch of shares 6 years ago. And let's suppose you did not invest again in those same shares since. Today (or six years later), the value of that investment is worth $1,980.
+For example, let's imagine you invested $\$1,000 of your money in a bunch of shares 6 years ago. And let's suppose you did not invest again in those same shares since. Today (or six years later), the value of that investment is worth $1,980.
 
 The $1,000 would be the **F** in our formula, **L** would be $1,980 and **N** would be 6 (number of years).
 
@@ -43,7 +43,7 @@ print ('Your investment had a CAGR of {:.2%} '.format(CAGR))
     Your investment had a CAGR of 12.06% 
 
 
-The above output suggests that our investment of $\$$1,000 six years ago had a growth rate of 12% each year. To see how this works, try and write down $1,000 and then multiply it by 1.1206. Do the same for the next five resulting values and you should get exactly $1,980 (or thereabouts given decimal points).
+The above output suggests that our investment of $\$1,000 six years ago had a growth rate of 12% each year. To see how this works, try and write down $1,000 and then multiply it by 1.1206. Do the same for the next five resulting values and you should get exactly $1,980 (or thereabouts given decimal points).
 
 That is, 12% is the rate of growth that would take you to the ending value, from the starting value, in the number of years given, if growth had been at the same rate every year. (In reality, growth rates are rarely constant).
 
