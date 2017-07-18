@@ -9,12 +9,19 @@ As a data science partner, companies leverage my skills to help their teams buil
 With an extensive and varied industry experience as well as a deep, practical technical expertise, I am often required by marketing, sales, finance, technology and strategy teams to provide support and delivery of analytics-driven business insights that are easy to use, easy to undestand and actionable.
 
 
-### Service Offerings
+# Service Offerings
 
 ***
 
-### Interactive Dashboards for Business Insights###
+### Interactive Dashboards###
 Marketing, sales or operations teams spend an awful lot of time planning their activities and are constantly under pressure to make their customers happy, the performance of their products optimal and the quality of their services unique. More often than not though, these teams will have little to no time or experience in gathering the often sparse and unstructured data available on their programs of work to create meaningful, actionable insights to help them adjust tactics and react swiftly.
+
+### Predictive Analytics###
+Marketing, sales or operations teams spend an awful lot of time planning their activities and are constantly under pressure to make their customers happy, the performance of their products optimal and the quality of their services unique. More often than not though, these teams will have little to no time or experience in gathering the often sparse and unstructured data available on their programs of work to create meaningful, actionable insights to help them adjust tactics and react swiftly.
+
+### Analytics Project Management###
+Marketing, sales or operations teams spend an awful lot of time planning their activities and are constantly under pressure to make their customers happy, the performance of their products optimal and the quality of their services unique. More often than not though, these teams will have little to no time or experience in gathering the often sparse and unstructured data available on their programs of work to create meaningful, actionable insights to help them adjust tactics and react swiftly.
+
 
 
 ### Some of my success stories:
