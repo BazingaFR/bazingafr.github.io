@@ -25,4 +25,5 @@ See what some of my clients and partner have said about my work:
 
 ***
 
-| I am text to the left more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text  | ![face](https://github.com/BazingaFR/bazingafr.github.io/raw/master/images/FR_LinkedInFace.png) |
+<img style="float: right;" src="https://github.com/BazingaFR/bazingafr.github.io/raw/master/images/FR_LinkedInFace.png">
+text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text more text 
