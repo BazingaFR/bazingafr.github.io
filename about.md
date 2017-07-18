@@ -25,4 +25,4 @@ See what some of my clients and partner have said about my work:
 
 ***
 
->\ quote text wuote
+| I am text to the left  | ![face](/FR_LinkedInFace.png) |
