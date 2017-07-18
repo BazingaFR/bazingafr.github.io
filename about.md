@@ -24,7 +24,14 @@ Marketing, sales or operations teams spend an awful lot of time planning their a
 
 # Tools
 
+***
+
+``` R ``` | ``` Python ```` | ``` Tableau ```
+
 # Skills, Expertise and Interests
+
+***
+
 
 # Some of my success stories:
 
