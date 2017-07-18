@@ -28,7 +28,7 @@ From the formula above you can see that to compute CAGR, you need three paramete
 
 Note in the formula above that it contains an exponential term. This term helps offset any volatility over the period analysed and it assumes the values or quantities are compounded over the period of time. In essence, CAGR is a metric that describes the growth rate of a value or unit over a period of time if it had grown at a steady rate.
 
-For example, let's imagine you invested $\$1,000 of your money in a bunch of shares 6 years ago. And let's suppose you did not invest again in those same shares since. Today (or six years later), the value of that investment is worth $1,980.
+For example, let's imagine you invested $\1,000 of your money in a bunch of shares 6 years ago. And let's suppose you did not invest again in those same shares since. Today (or six years later), the value of that investment is worth $1,980.
 
 The $1,000 would be the **F** in our formula, **L** would be $1,980 and **N** would be 6 (number of years).
 
