@@ -10,7 +10,7 @@ With an extensive and varied industry experience as well as a deep, practical te
 
 
 Domain:
-> > Felipe is a rgeat aasst
+>> Felipe is a rgeat aasst
 
 
 
