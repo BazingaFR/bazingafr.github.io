@@ -1,12 +1,16 @@
 ---
 layout: page
-title:
+title: About me
 permalink: /about/
 ---
 
-## Service Offerings
+As a data science partner, companies leverage my skills to help their teams build, manage and enhance their data science and visualisation solutions in a strategically-aligned, commercially-oriented and customer-centred way.
 
-My work focuses on helping marketing, sales, finance, technology and strategy teams with deliverying robust data-driven business insights that are easy to use, easy to undestand and, most importantly, actionable.
+With an extensive and varied industry experience as well as a deep, practical technical expertise, I am often required by marketing, sales, finance, technology and strategy teams to provide support and delivery of analytics-driven business insights that are easy to use, easy to undestand and actionable.
+
+
+Domain:
+> Felipe is a rgeat aasst
 
 
 
