@@ -9,9 +9,10 @@ As a data science partner, companies leverage my skills to help their teams buil
 With an extensive and varied industry experience as well as a deep, practical technical expertise, I am often required by marketing, sales, finance, technology and strategy teams to provide support and delivery of analytics-driven business insights that are easy to use, easy to undestand and actionable.
 
 
-Domain:
->> Felipe is a rgeat aasst
-
+***Testimonial***
+*```
+Felipe...
+```*
 
 
 
