@@ -8,8 +8,9 @@ As a data science partner, companies leverage my skills to help their teams buil
 
 With an extensive and varied industry experience as well as a deep, practical technical expertise, I am often required by marketing, sales, finance, technology and strategy teams to provide support and delivery of analytics-driven business insights that are easy to use, easy to undestand and actionable.
 
+See below what some of my clients and partner have said about my work:
 
-***Testimonial***
+***Leading an reporting solutions project for a corporate finance team***
 
 ***
 
@@ -18,6 +19,7 @@ With an extensive and varied industry experience as well as a deep, practical te
 ```*  ***Analytics service provider to a project I lead, Mar. 2017***
 
 ***
+
 
 
 
