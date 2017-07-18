@@ -15,7 +15,9 @@ With an extensive and varied industry experience as well as a deep, practical te
 
 *```
 "Felipe brought in my team to stand up a novel, unprecedented financial reporting capability for the business in just over a month. Expectations were high with a lot of moving parts requiring a lot of faith and a lot of communication with diverse stakeholders across the country, and Felipe brought everyone along the journey. His ability to listen, lead, learn and explain were instrumental to the project's success. I highly recommend him to anyone considering such an effort and hoping for a similar result or better."
-```*  ***Service Provider to a project I lead***
+```*  ***Analytics service provider to a project I lead, Mar. 2017***
+
+***
 
 
 
