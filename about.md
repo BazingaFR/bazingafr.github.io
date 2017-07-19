@@ -64,3 +64,5 @@ I specialise in providing:
 ```*  ***-- Sales Executive, Jul. 2013***
 
 ***
+
+Get in touch! I'm available to consult, advise and/or develop advanced data analytics and visualisation solutions with marketing, sales, finance, technology and strategy teams across Australia.
