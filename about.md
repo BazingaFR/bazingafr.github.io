@@ -28,21 +28,6 @@ Marketing, sales or operations teams spend an awful lot of time planning their a
 ### Analytics Project Management###
 Marketing, sales or operations teams spend an awful lot of time planning their activities and are constantly under pressure to make their customers happy, the performance of their products optimal and the quality of their services unique. More often than not though, these teams will have little to no time or experience in gathering the often sparse and unstructured data available on their programs of work to create meaningful, actionable insights to help them adjust tactics and react swiftly.
 
-# Tools
-
-***
-![](https://github.com/BazingaFR/bazingafr.github.io/raw/master/images/r_logo.png)
-![](https://github.com/BazingaFR/bazingafr.github.io/raw/master/images/python_logo.png)
-![](https://github.com/BazingaFR/bazingafr.github.io/raw/master/images/tableau_logo.png)
-![](https://github.com/BazingaFR/bazingafr.github.io/raw/master/images/github_logo.png)
-![](https://github.com/BazingaFR/bazingafr.github.io/raw/master/images/jupyter_logo.png)
-![](https://github.com/BazingaFR/bazingafr.github.io/raw/master/images/anaconda_logo.png)
-![](https://github.com/BazingaFR/bazingafr.github.io/raw/master/images/google_analytics_logo.png)
-
-
-
-# Skills, Expertise and Interests
-
 ***
 
 
