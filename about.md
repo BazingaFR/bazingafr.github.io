@@ -4,24 +4,24 @@ title: About me
 permalink: /about/
 ---
 
-As a data science partner, organisations leverage my skills to help teams build, manage and enhance their data science and visualisation solutions in a strategically-aligned, commercially-oriented and customer-centred way.
+As a data science partner, I help teams build, manage and enhance their data science and visualisation solutions in a strategically-aligned, commercially-oriented and customer-centred way.
 
-With an extensive and varied industry experience as well as a deep, practical technical expertise, I am often required by marketing, sales, finance, technology and strategy teams to provide support and to deliver analytics-driven business insights that are easy to use, undestand and implement.
+With an extensive industry experience as well as a deep, technical analytical expertise, I am often required by marketing, sales, finance, technology and strategy teams to provide support and to deliver robust analytics-driven solutions that are easy to use, undestand and implement.
 
 
 I specialise in providing:
 
 ### Data Discovery & Exploratory Data Analysis ###  
-- I partner with teams to help them identify sources, types and quality of the data available in their organsations. From a pre-defined set of specific business questions, assumptions or hypothesis needing attention, I provide robust exploratory data analyses to help identify patterns and provide initial insights. 
+- I partner with teams to help them identify the sources, types and quality of data available in their organsations. I also provide robust exploratory data analyses that help teams identify patterns and generate initial insights. 
 
 ### Interactive Data Visualisation Dashboards ###    
-- I partner with teams to provide them with automated, interactive data visualisation dashboards about their customers, products or services performance.
+- I partner with teams to provide them with automated, interactive data visualisation dashboards about their customers, products or services to help monitor performance.
 
 ### Predictive Analytics ###    
-- I partner with teams to create and implement segmentation models, sales forecast, propensity to churn, recommender systems and many other analytical solutions to their day-to-day problems. 
+- I partner with teams to implement segmentation models, sales forecast, propensity models, recommender systems and many other analytical solutions to optimise operations, antecipate the future and allow better decision-making.
 
 ### Analytics Project Management###
-- I provide organisations with a good balance between technical, practical analytical skills and business, strategy and project management experience. With a track record of leading and nurturing analytics teams, organisations often rely on me to help them lead their analytics teams' journey to the next level.
+- I provide organisations with a good balance between technical, practical analytical skills as well as business, strategy and project management experience. With a track record of leading and nurturing high-performing analytics teams, organisations often rely on me to help them lead their analytics' journey to the next level.
 
 
 # Success stories:
