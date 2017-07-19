@@ -4,7 +4,7 @@ title: About me
 permalink: /about/
 ---
 
-As a data science partner, companies leverage my skills to help their teams build, manage and enhance their data science and visualisation solutions in a strategically-aligned, commercially-oriented and customer-centred way.
+As a data science partner, companies leverage my skills to help teams build, manage and enhance their data science and visualisation solutions in a strategically-aligned, commercially-oriented and customer-centred way.
 
 With an extensive and varied industry experience as well as a deep, practical technical expertise, I am often required by marketing, sales, finance, technology and strategy teams to provide support and to deliver analytics-driven business insights that are easy to use, easy to undestand and actionable.
 
@@ -16,6 +16,7 @@ With an extensive and varied industry experience as well as a deep, practical te
 ### Exploratory Data Analysis for Pattern Discovery ###
 Way too often organisations are not set up in a way that allows teams to know or fully understand the extent of the data available in their business. From discovering new sources of customer or product information to ingesting competitor data into internal databases to tackling data quality in CRM systems, companies of all sizes require constant, robust data exploration. Occasionally, organisations don't have an in-house team that can help them with the necessary data exploration and insights needed. That is when teams can leverage my skills in ingesting, wrangling, cleaning, standardizing and querying large amounts of both structured and unstructured datasets that may exist in their businesses or outside (cloud, APIs, third-party systems, etc.) for pattern discovery and and improved business intelligence.
 
+|
 
 ### Interactive Data Visualisation Dashboards for Insights###
 Marketing, sales or operations teams spend an awful lot of time planning their activities and are constantly under pressure to make their customers happy, the performance of their products optimal and the quality of their services unique. More often than not though, these teams will have little to no time or experience in gathering the often sparse and unstructured data available on their programs of work to rapidly create meaningful, actionable insights to help them adjust tactics and replan. That is when teams can leverage my skills to help them gain insights from interactive data visualisation platforms. 
