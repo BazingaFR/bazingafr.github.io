@@ -19,14 +19,13 @@ disqus_account: #jeky-new-age
 social:
   - title: twitter
     url: https://twitter.com/feliperego
-  #- title: facebook
-  #  url: https://facebook.com/lantoniotrento
+  - title: linkedin
+    url: https://www.linkedin.com/in/feliperego/
   #- title: google-plus
   #  url: https://plus.google.com/+AntoniotrentoIt
   - title: github
     url: http://github.com/feliperego
-  #- title: linkedin
-  #	url: https://www.linkedin.com/in/feliperego/
+
 
 # Build settings
 markdown: kramdown
