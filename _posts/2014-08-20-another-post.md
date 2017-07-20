@@ -8,18 +8,8 @@ layout: post
 <p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
 <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
+<p>test test test</p>
 
-```r
-# Load necessary libraries
-library(datasets)
-library(ggplot2)
-library(FactoMineR)
-library(scales)
-library(rgl)
-library(knitr)
-library(scatterplot3d)
+<p>test test test</p>
 
-# only display the top 5 records of the mtcars dataset
-dta = mtcars
-head(dta)
-```
+<p>test test test</p>
