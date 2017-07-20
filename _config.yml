@@ -25,8 +25,8 @@ social:
   #  url: https://plus.google.com/+AntoniotrentoIt
   - title: github
     url: http://github.com/feliperego
-  - title: linkedin
-  	url: https://www.linkedin.com/in/feliperego/
+  #- title: linkedin
+  #	url: https://www.linkedin.com/in/feliperego/
 
 # Build settings
 markdown: kramdown
