@@ -3,7 +3,7 @@ title: 'Multiple Regression Analysis in R - First Steps'
 layout: post
 ---
 
-In our previous study example, we looked at the Simple Linear Regression model. We loaded the **Prestige** dataset and used *income* as our response variable and *education* as the predictor. We generated three models regressing Income onto Education (with some transformations applied) and had strong indications that the linear model was not the most appropriate for the dataset.
+<p>In our previous study example, we looked at the Simple Linear Regression model. We loaded the **Prestige** dataset and used *income* as our response variable and *education* as the predictor. We generated three models regressing Income onto Education (with some transformations applied) and had strong indications that the linear model was not the most appropriate for the dataset.</p>
 
 In this example we'll extend the concept of linear regression to include multiple predictors. **Prestige** will continue to be our dataset of choice and can be found in the car package ```library(car)```.
 
