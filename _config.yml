@@ -1,8 +1,8 @@
-name: Alpha
-description: Alphs template for Jekyll
-baseurl: '/Alpha-Jekyll-Theme'
+name: Felipe Rego
+description: Helping teams build, manage and improve their data science capabilities.
+baseurl: 
 
-url: "http://localhost:4000"
+url: "http://bazingafr.github.io"
 
 paginate: 10
 
