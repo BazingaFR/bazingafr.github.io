@@ -1,7 +1,6 @@
 ---
 layout: page
 title: About me
-permalink: /blog/
 ---
 
 As a data science partner, I help teams build, manage and enhance their data science and visualisation solutions in a strategically-aligned, commercially-oriented and customer-centred way.
