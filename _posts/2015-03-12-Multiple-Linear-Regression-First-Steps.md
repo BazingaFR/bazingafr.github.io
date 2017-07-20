@@ -1,13 +1,6 @@
 ---
 title: 'Multiple Regression Analysis in R - First Steps'
 layout: post
-date: 2015-03-12
-permalink: /blog/2015/03/12/Multiple-Linear-Regression-First-Steps
-tags:
-  - Linear Regression
-  - Predictive Analytics
-  - 3D Graphs
-  - R
 ---
 
 In our previous study example, we looked at the Simple Linear Regression model. We loaded the **Prestige** dataset and used *income* as our response variable and *education* as the predictor. We generated three models regressing Income onto Education (with some transformations applied) and had strong indications that the linear model was not the most appropriate for the dataset.
