@@ -13,7 +13,7 @@ name                     : "Felipe Rego"
 description              : "An amazing website."
 url                      : "https://bazingafr.github.io"# the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : "BazingaFR"# GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "BazingaFR/bazingafr.github.io"# GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -77,10 +77,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Felipe Rego"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
+  bio              : "Helping teams build, manage and enhance their data science capabilities."
+  location         : "Sydney, Australia"
   email            :
   uri              :
   bitbucket        :
