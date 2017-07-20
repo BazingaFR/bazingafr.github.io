@@ -1,26 +1,31 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
 
-{% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
-  {% include page__hero.html %}
-{% elsif page.header.video.id and page.header.video.provider %}
-  {% include page__hero_video.html %}
-{% endif %}
+<head>
+    {% include head.html %}
+</head>
 
-{% if page.url != "/" and site.breadcrumbs %}
-  {% unless paginator %}
-    {% include breadcrumbs.html %}
-  {% endunless %}
-{% endif %}
+<body class="home-template" itemscope itemtype="http://schema.org/WebPage">
+    {% include header.html %}
+    <div id="main" class="content" role="main" itemprop="mainContentOfPage">
+        <div class="container">
+            <div class="row">
+                <div class="page-body col-md-10 col-md-offset-1" itemprop="description">
+                    <h1>Archive of posts with {{ page.type }} '{{ page.title }}'</h1>
+                    <ul class="posts">
+                        {% for post in page.posts %}
+                        <li>
+                            <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+                            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
-<div id="main" role="main">
-  {% include sidebar.html %}
+    {% include footer.html %} {% include scripts.html %}
+</body>
 
-  <div class="archive">
-    {% unless page.header.overlay_color or page.header.overlay_image %}
-      <h1 class="page__title">{{ page.title }}</h1>
-    {% endunless %}
-    {{ content }}
-  </div>
-</div>
+</html>

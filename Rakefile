@@ -1,75 +1,97 @@
-require "bundler/gem_tasks"
-require "jekyll"
-require "listen"
-
-def listen_ignore_paths(base, options)
-  [
-    /_config\.ya?ml/,
-    /_site/,
-    /\.jekyll-metadata/
-  ]
-end
-
-def listen_handler(base, options)
-  site = Jekyll::Site.new(options)
-  Jekyll::Command.process_site(site)
-  proc do |modified, added, removed|
-    t = Time.now
-    c = modified + added + removed
-    n = c.length
-    relative_paths = c.map{ |p| Pathname.new(p).relative_path_from(base).to_s }
-    print Jekyll.logger.message("Regenerating:", "#{relative_paths.join(", ")} changed... ")
-    begin
-      Jekyll::Command.process_site(site)
-      puts "regenerated in #{Time.now - t} seconds."
-    rescue => e
-      puts "error:"
-      Jekyll.logger.warn "Error:", e.message
-      Jekyll.logger.warn "Error:", "Run jekyll build --trace for more information."
-    end
-  end
-end
-
-task :preview do
-  base = Pathname.new('.').expand_path
-  options = {
-    "source"        => base.join('test').to_s,
-    "destination"   => base.join('test/_site').to_s,
-    "force_polling" => false,
-    "serving"       => true,
-    "theme"         => "minimal-mistakes-jekyll"
-  }
-
-  options = Jekyll.configuration(options)
-
-  ENV["LISTEN_GEM_DEBUGGING"] = "1"
-  listener = Listen.to(
-    base.join("_includes"),
-    base.join("_layouts"),
-    base.join("_sass"),
-    base.join("assets"),
-    options["source"],
-    :ignore => listen_ignore_paths(base, options),
-    :force_polling => options['force_polling'],
-    &(listen_handler(base, options))
-  )
-
-  begin
-    listener.start
-    Jekyll.logger.info "Auto-regeneration:", "enabled for '#{options["source"]}'"
-
-    unless options['serving']
-      trap("INT") do
-        listener.stop
-        puts "     Halting auto-regeneration."
-        exit 0
-      end
-
-      loop { sleep 1000 }
-    end
-  rescue ThreadError
-    # You pressed Ctrl-C, oh my!
+  # adapted from https://github.com/imathis/octopress/blob/master/Rakefile   
+  # usage rake new_post['My New Post'] or rake new_post (defaults to "My New Post")
+  desc "Start a new post"
+  task :new, :title do |t, args|
+   args.with_defaults(:title => 'My New Post')
+   title = args.title
+   filename = "_posts/#{Time.now.strftime('%Y-%m-%d')}-#{title.downcase.gsub(/&/,'and').gsub(/[,'":\?!\(\)\[\]]/,'').gsub(/[\W\.]/, '-').gsub(/-+$/,'')}.md"
+   puts "Creating new post: #{filename}"
+   open(filename, 'w') do |post|
+     post.puts "---"
+     post.puts "layout: post"
+     post.puts "title: \"#{title.gsub(/&/,'&amp;')}\""
+     post.puts "description: "
+     post.puts "headline: "
+     post.puts "modified: #{Time.now.strftime('%Y-%m-%d')}"
+     post.puts "category: personal"
+     post.puts "tags: []"
+     post.puts "image: "
+     post.puts "  feature: "
+     post.puts "comments: true"
+     post.puts "mathjax: "
+     post.puts "---"
+   end
   end
 
-  Jekyll::Commands::Serve.process(options)
-end
+  desc "Start a new quote"
+  task :newquote, :title do |t, args|
+   args.with_defaults(:title => 'My New quote')
+   title = args.title
+   filename = "_posts/#{Time.now.strftime('%Y-%m-%d')}-#{title.downcase.gsub(/&/,'and').gsub(/[,'":\?!\(\)\[\]]/,'').gsub(/[\W\.]/, '-').gsub(/-+$/,'')}.md"
+   puts "Creating new post: #{filename}"
+   open(filename, 'w') do |post|
+     post.puts "---"
+     post.puts "layout: post"
+     post.puts "type: quote"
+     post.puts "title: \"#{title.gsub(/&/,'&amp;')}\""
+     post.puts "description: "
+     post.puts "headline: "
+     post.puts "modified: #{Time.now.strftime('%Y-%m-%d')}"
+     post.puts "category: quotes"
+     post.puts "tags: []"
+     post.puts "image: "
+     post.puts "  feature: "
+     post.puts "comments: false"
+     post.puts "mathjax: "
+     post.puts "---"
+   end
+  end
+
+  desc "Start a new status"
+  task :newstatus, :title do |t, args|
+   args.with_defaults(:title => 'My New Post')
+   title = args.title
+   filename = "_posts/#{Time.now.strftime('%Y-%m-%d')}-#{title.downcase.gsub(/&/,'and').gsub(/[,'":\?!\(\)\[\]]/,'').gsub(/[\W\.]/, '-').gsub(/-+$/,'')}.md"
+   puts "Creating new post: #{filename}"
+   open(filename, 'w') do |post|
+     post.puts "---"
+     post.puts "layout: post"
+     post.puts "type: status"
+     post.puts "title: \"#{title.gsub(/&/,'&amp;')}\""
+     post.puts "description: "
+     post.puts "headline: "
+     post.puts "modified: #{Time.now.strftime('%Y-%m-%d')}"
+     post.puts "category: status"
+     post.puts "tags: []"
+     post.puts "image: "
+     post.puts "  feature: "
+     post.puts "comments: false"
+     post.puts "mathjax: "
+     post.puts "---"
+   end
+  end
+
+    # adapted from https://github.com/imathis/octopress/blob/master/Rakefile   
+  # usage rake new_post['My New Post'] or rake new_post (defaults to "My New Post")
+  desc "Start a new page"
+  task :newpage, :title do |t, args|
+   args.with_defaults(:title => 'My New page')
+   title = args.title
+   filename = "#{title.downcase.gsub(/&/,'and').gsub(/[,'":\?!\(\)\[\]]/,'').gsub(/[\W\.]/, '-').gsub(/-+$/,'')}.md"
+   puts "Creating new page: #{filename}"
+   open(filename, 'w') do |post|
+     post.puts "---"
+     post.puts "layout: page"
+     post.puts "permalink: #{title.downcase.gsub(/&/,'and').gsub(/[,'":\?!\(\)\[\]]/,'').gsub(/[\W\.]/, '-').gsub(/-+$/,'')}/index.html"
+     post.puts "title: \"#{title.gsub(/&/,'&amp;')}\""
+     post.puts "description: "
+     post.puts "headline: "
+     post.puts "modified: #{Time.now.strftime('%Y-%m-%d')}"
+     post.puts "tags: []"
+     post.puts "image: "
+     post.puts "  feature: "
+     post.puts "comments: true"
+     post.puts "mathjax: "
+     post.puts "---"
+   end
+  end
