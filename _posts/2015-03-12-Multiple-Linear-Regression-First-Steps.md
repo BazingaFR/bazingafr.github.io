@@ -1,7 +1,6 @@
 ---
 title:  "Multiple Regression Analysis in R - First Steps"
 date:   2015-03-12
-permalink: /blog/2015/03/12/Multiple-Linear-Regression-First-Steps
 categories: [Machine Learning Cat]
 tags: [Machine Learning Tag]
 ---
