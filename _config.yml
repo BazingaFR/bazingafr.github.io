@@ -1,207 +1,117 @@
-# --- General options --- #
+### GENERAL SETTINGS ###
 
-# url is the full website URL
-# baseurl is the website's URL without the hostname
-
-# If you are building a simple GitHub user page (http://username.github.io) then use these settings:
+# Site settings
+title: SOLID.
+description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
+analytics: #Google analytics code in the format XX-nnnnnnnn-n
+baseurl: "BazingaFR" #important: start with /
 url: "https://bazingafr.github.io"
-baseurl: ""
 
-# If you are building a GitHub project page then use these settings:
-#url: "http://username.github.io/projectname"
-#baseurl: "/projectname"
-
-# Of course don't forget to change the username and projectname to YOUR username and project
-
-# Name of website
-title: Felipe Rego
-
-# Short description of your site
-description: Helping teams build, manage and  improve their data science capabilities.
-
-# --- Navigation bar options --- #
-
-# List of links in the navigation bar
-navbar-links:
-  About Me: "aboutme"
-  Portfolio: "portfolio"
-
-# Image to show in the navigation bar - image must be a square (width = height)
-# Remove this parameter if you don't want an image in the navbar
-avatar: "/img/avatar-icon.png"
-
-# If you want to have an image logo in the top-left corner instead of the title text,
-# then specify the following parameter
-# title-img: /path/to/image
-
-# --- Footer options --- #
-
-# Change all these values or delete the ones you don't want.
-# Important: you must keep the "name" parameter, everything else you can remove
-author:
-  name: Some Person
-  email: "youremail@domain.com"
-  facebook: yourname  # eg. daattali
-  github: yourname    # eg. daattali
-  twitter: yourname   # eg. daattali
-  reddit: yourname    # eg. daattali
-  google-plus: +yourname   # eg. +DeanAttali or 109424658772469020925
-  linkedin: yourname  # eg. daattali
-  xing: yourname      # eg. daattali
-  stackoverflow: yourlink  # eg. "3943160/daattali"
-  snapchat: yourname  # eg. daattali
-  instagram: yourname # eg. daattali
-  youtube: yourlink   # eg. user/daattali or channel/daattali
-  spotify: yourname   # eg. daattali
-  telephone: yourphone   # eg. +14159998888
-
-# Select which links to show in the footer
-footer-links-active:
-  rss: false
-  facebook: true
-  email: true
-  twitter: true
-  google-plus: false
-  github: true
-  reddit: false
-  linkedin: false
-  xing: false
-  stackoverflow: false
-  snapchat: false
-  instagram: false
-  youtube: false
-  spotify: false
-  telephone: false
-
-# Select which share links to show in posts
-share-links-active:
-  twitter: true
-  facebook: true
-  google: false
-  linkedin: true
-
-# How to display the link to the website in the footer
-# Remove this if you don't want a link in the footer
-url-pretty: "MyWebsite.com"  # eg. "deanattali.com/beautiful-jekyll"
-
-# --- Misc --- #
-# Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
-#disqus: ""
-
-# Fill in your Google Analytics ID to track your website using GA
-#google_analytics: ""
-
-# Google Tag Manager ID
-#gtm: ""
-
-# Facebook App ID
-# fb_app_id: ""
-
-# Excerpt Word Length
-# Truncates the excerpt to the specified number of words on the index page
-excerpt_length: 50
-
-# Character used to separate site title and description in HTML document title
-# and RSS feed title
-title-separator: "-"
-
-# --- Don't need to touch anything below here (but you can if you want) --- #
-
-# Output options (more information on Jekyll's site)
-timezone: "America/Vancouver"
+# Build settings
 markdown: kramdown
-highlighter: rouge
-permalink: /:year-:month-:day-:title/
-paginate: 5
+permalink: /:categories/:title
+excerpt_separator: <!--more--> #use this in posts to define how long the excerpt of the post (that is shown on the Blog page) is
 
-kramdown:
-  input: GFM
+colors:  #in hex code if not noted else
+  primary: "#00b3fe" #"#F70031"
+  primary_rgb: "0,179,254" #"247,0,49" #rgb of the primary. Needed in some places for the transparency effect.
+  secondary: "#384452" #"#33004D"
+  link: "#428bca"
+  link_hover: "#01b2fe"
+  footer_heading: "#ffffff"
+  footer_content: "#bfc9d3"
 
-# Default YAML values (more information on Jekyll's site)
-defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-      comments: true  # add comments to all blog posts
-      social-share: true # add social media sharing buttons to all blog posts
-  -
-    scope:
-      path: "" # all files
-    values:
-      layout: "page"
-      show-avatar: true
+# Making projects separate from posts
+collections:
+  projects:
+    output: true
+    permalink: /projects/:title/
+  questions:
+    output: true
+    permalink: /questions/:title/
 
-# Use tags pages (not recommended if you are deploying via GitHub pages, only set to true if deploying locally with ruby)
-link-tags: false
+### CONTACT SETTINGS ###
 
-# Exclude these files from production site
-exclude:
-  - CHANGELOG.md
-  - CNAME
-  - Dockerfile
-  - Gemfile
-  - Gemfile.lock
-  - LICENSE
-  - README.md
-  - Vagrantfile
+# Social networks usernames. Many more available: google-plus, flickr, linkedin, etc). Shown in footer.
+social:
+  - title: dribbble
+    url:
+  - title: facebook
+    url:
+  - title: twitter
+    url:
+  - title: instagram
+    url:
+  - title: tumblr
+    url:
 
-# prose.io config
-prose:
-  rooturl: '_posts'
-  media: 'img'
-  ignore:
-    - 404.html
-    - LICENSE
-    - feed.xml
-    - _config.yml
-    - /_layouts
-    - /_includes
-    - /css
-    - /img
-    - /js
-  metadata:
-    _posts:
-      - name: "layout"
-        field:
-          element: "hidden"
-          value: "post"
-      - name: "title"
-        field:
-          element: "text"
-          label: "Post title"
-          placeholder: "Title"
-          alterable: true
-      - name: "subtitle"
-        field:
-          element: "textarea"
-          label: "Subtitle"
-          placeholder: "A description of your post."
-          alterable: true
-      - name: "date"
-        field:
-          element: "text"
-          label: "Date"
-          help: "Enter date of post."
-          placeholder: "yyyy-mm-dd"
-          alterable: true
-      - name: "image"
-        field:
-          element: "text"
-          label: "Image"
-          help: "Add a thumbnail image to your post."
-          placeholder: "Thumbnail"
-          alterable: true
-      - name: "published"
-        field:
-          element: "checkbox"
-          label: "Publish"
-          help: "Check to publish post, uncheck to hide."
+# Postal address (add as many lines as necessary). Shown in footer and on Contact page.
+address:
+  - lines:
+    - Some Ave, 987,
+    - 23890, New York,
+    - United States.
+email: hello@solidtheme.com
+tel: +34 8493-4893
 
-gems:
-  - jekyll-paginate
 
-# Beautiful Jekyll / Dean Attali
-# 2fc73a3a967e97599c9763d05e564189
+### GENERAL DATA FOR VARIOUS LOCATIONS ###
+
+# Members information. Shown on About page.
+members:
+  - name: Mark Webber
+    position: CEO
+    text: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    img: team01.jpg
+    social:
+      - title: envelope #use for email address
+        url: mailto:name@domain.com
+      - title: twitter
+        url: http://twitter.com/handle
+  - name: Paul Jameson
+    position: Lead Designer
+    text: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    img: team02.jpg
+    social:
+      - title: envelope #use for email address
+        url: mailto:name@domain.com
+      - title: twitter
+        url: http://twitter.com/handle
+  - name: Laura Sommers
+    position: Lead Developer
+    text: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    img: team03.jpg
+    social:
+      - title: envelope #use for email address
+        url: mailto:name@domain.com
+      - title: twitter
+        url: http://twitter.com/handle
+  - name: Martin Blunt
+    position: Marketing
+    text: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    img: team04.jpg
+    social:
+      - title: envelope #use for email address
+        url: mailto:name@domain.com
+      - title: twitter
+        url: http://twitter.com/handle
+
+# Clients information. Shown on Home and About pages.
+clients:
+  - name: dribbble
+    img: client01.png
+  - name: Code is Poetry
+    img: client02.png
+  - name: Vimeo
+    img: client03.png
+  - name: VimeoPro
+    img: client04.png
+
+# Short text about your company. Shown in footer on every page and also separately on Home and Contact page.
+about: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+
+# Testimonial content. Shown on Home and About page.
+testimonial:
+    message: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+    author: Marcel Newman
+    position: WEB DESIGNER - BLACKTIE.CO
