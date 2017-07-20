@@ -9,7 +9,7 @@ tags:
   - Training and Testing
   - R
 ---
-
+<img src="{{ site.baseurl }}/images/resampling.jpg">
 **Resampling** is a technique that allows us to repeatedly draw samples from a set of observations and to refit a model on each sample in order to obtain additional information. Resampling can be useful to estimate the variability of the model fit and to estimate the error rate of the model when applied in new previously unseen data. Resampling can also help in selecting a good level of model flexibility and can also be used to compare the performance (and error rates) of different predictive models.
 
 There are many resampling techniques available. Some of the most popular ones include **Cross-Validation** techniques (**K-Fold**, **Leave-One-Out**, etc.), **Bootstrap** and **Validation Set** (training and testing set split).
