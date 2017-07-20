@@ -9,7 +9,7 @@
 locale                   : "en"
 title                    : "Felipe Rego"
 title_separator          : "-"
-name                     : "Your Name"
+name                     : "Felipe Rego"
 description              : "An amazing website."
 url                      : "https://bazingafr.github.io"# the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
