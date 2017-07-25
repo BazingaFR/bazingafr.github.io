@@ -1,4 +1,22 @@
 ---
+title: 'Visualising Food Nutrients with Interactive R Dashboard'
+layout: post
+date: 2017-07-26
+permalink: /blog/2017/07/26/Visualising-Food-Nutrients-with-R
+tags:
+  - Linear Regression
+  - Predictive Analytics
+  - 3D Graphs
+  - R
+---
+
+
+
+```{r, echo = FALSE}
+
+
+
+---
 title: "Visualising Food Nutrients with Interactive R Dashboard"
 output: 
   flexdashboard::flex_dashboard:
@@ -37,12 +55,12 @@ fnshort = fn[,c(8, 9, 10, 13, 16, 36, 38)]
 
 # rename columns
 colnames(fnshort) = c('Protein', 
-				 'Fat', 
-				 'Carbs', 
-				 'Sugars', 
-				 'Fibre', 
-				 'Calcium',
-				 'Iron')
+         'Fat', 
+         'Carbs', 
+         'Sugars', 
+         'Fibre', 
+         'Calcium',
+         'Iron')
 
 ```
 
@@ -115,3 +133,10 @@ renderTable({
 }, spacing = "xs"
  , rownames = TRUE)
 ```
+
+
+```
+
+
+
+
