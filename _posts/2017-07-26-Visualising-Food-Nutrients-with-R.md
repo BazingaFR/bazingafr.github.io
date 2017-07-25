@@ -10,6 +10,7 @@ tags:
   - R
 ---
 
+Test this text for checking that is will display the right format and the right ontenxt. The more the marrier.
 
 
-<iframe src="https://feliperego.shinyapps.io/visualising_food_nutrients_with_interactive_r_dashboard/" style="border: none; width: 440px; height: 500px"></iframe>
+<iframe src="https://feliperego.shinyapps.io/visualising_food_nutrients_with_interactive_r_dashboard/" style="border: none; width: 660px; height: 500px"></iframe>
