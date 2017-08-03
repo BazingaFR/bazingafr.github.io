@@ -1,7 +1,7 @@
 ---
 layout: home
 paginate: true
-alt_title: "Analytics for commercial success"
+alt_title: "Analytics for results"
 sub_title: "Helping organisations improve performance through data and analytics."
 introduction: |
   Felipe is an [advanced analytics and data visualisation consultant](https://feliperego.github.io/about) helping organisations improve performance through data and analytics:
