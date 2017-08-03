@@ -1,6 +1,5 @@
 ---
 title: 'Introduction to Principal Component Analysis (PCA) in Unsupervised Learning Settings'
-layout: post
 date: 2016-05-31
 permalink: /blog/2016/05/31/Intro-To-Principal-Component-Analysis
 tags:
