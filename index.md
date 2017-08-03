@@ -3,7 +3,6 @@ layout: home
 paginate: true
 alt_title: "Advanced Analytics & Data Visualisation"
 sub_title: "Helping teams build, manage and enhance their data science capabilities."
-
 introduction: |
   Hi there, I'm Felipe. I'm an [advanced analytics and data visualisation consultant](https://feliperego.github.io/about). As an independent data science partner, I help teams improve their organisations performance through the use of data and analytics:
 
