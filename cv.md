@@ -1,8 +1,8 @@
 ---
-title: Curriculum Vitæ
+title: Resume
 layout: cv
 actions:
-  - label: "Download as PDF"
+  - label: "Download my resume"
     icon: pdf
     url: "#pdf-asset"
 ---
