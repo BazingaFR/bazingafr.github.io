@@ -16,7 +16,7 @@
 lang: en-US
 title: Felipe Rego
 email:
-description: Helping teams build, manage and enhance their data science capabilities.
+description: "Helping teams build, manage and enhance their data science capabilities."
 baseurl: # the optional subpath of your site, e.g. "/blog"
 url: https://bazingafr.github.io# the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 author: 
