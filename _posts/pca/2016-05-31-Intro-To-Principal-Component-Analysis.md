@@ -1,5 +1,5 @@
 ---
-title: 'Introduction to Principal Component Analysis (PCA) in Unsupervised Learning Settings'
+title: "Introduction to Principal Component Analysis (PCA) in Unsupervised Learning Settings"
 layout: default
 date: 2016-05-31
 categories: PCA
