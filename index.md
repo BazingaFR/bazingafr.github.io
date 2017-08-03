@@ -1,10 +1,9 @@
 ---
-layout: default
+layout: archive
 permalink: /
-title: "Data Analytics"
+title: "Blog"
 ---
 
-Text here to make sure it works fine........... more text here
 
 <div class="tiles">
 {% for post in site.posts %}
