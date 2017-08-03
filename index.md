@@ -18,8 +18,6 @@ introduction: |
   I'm also a [blogger](https://feliperego.github.io/blog) in predictive analytics, statistical learning and data visualisation, a husband and a father of two.
 
   I'm available to consult, advise and/or develop advanced data analytics and visualisation solutions with marketing, digital, sales, operations, finance, technology and strategy teams across Australia.
-
-
 actions:
   - label: "LinkedIn"
     icon: linkedin
