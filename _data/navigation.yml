@@ -1,6 +1,11 @@
 # Site navigation links
 
-- title: About me
+- title: About
   url: /about/
-  excerpt: "Background, expertise, interests, etc."
+  excerpt: "My background, expertise and interests"
   image: aboutme.jpg
+
+- title: Blog
+  url: /blog/
+  excerpt: "Some ideas I like sharing"
+  image: blog.jpeg
