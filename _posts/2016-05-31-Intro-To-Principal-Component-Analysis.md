@@ -1,8 +1,7 @@
 ---
 title: 'Introduction to Principal Component Analysis (PCA) in Unsupervised Learning Settings'
-layout: post
-date: 2016-05-31
-permalink: /blog/2016/05/31/Intro-To-Principal-Component-Analysis
+excerpt: "Principal Component Analysis (PCA) is a popular method used in statistical learning approaches."
+last_modified_at: 2016-05-31
 tags:
   - Unsupervised Learning
   - PCA
