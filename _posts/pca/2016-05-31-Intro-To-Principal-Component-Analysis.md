@@ -3,7 +3,8 @@ title: 'Introduction to Principal Component Analysis (PCA) in Unsupervised Learn
 date: 2016-05-31
 categories: PCA
 image:
-  feature: pca1.jpg
+  teaser: pca_teaser1.jpg
+  feature: pca_feature1.jpg
   credit: #name of the person or site you want to credit
   creditlink: #url to their site or licensing
 tags:
