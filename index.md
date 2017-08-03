@@ -24,7 +24,4 @@ actions:
   - label: "LinkedIn"
     icon: linkedin
     url: "https://www.linkedin.com/in/feliperego/"
-  - label: "Twitter"
-    icon: twitter
-    url: "https://twitter.com/FelipeRego"
  ---
