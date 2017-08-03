@@ -1,15 +1,17 @@
 ---
 layout: home
 paginate: true
-alt_title: "Advanced Analytics & Data Visualisation"
-sub_title: "Helping teams build, manage and enhance their data science capabilities."
+alt_title: "Analytics focused on commercial success"
+sub_title: "Helping organisations improve performance through data and analytics."
 introduction: |
-  Hi there, I'm Felipe. I'm an [advanced analytics and data visualisation consultant](https://feliperego.github.io/about). I help organisations improve performance through the use of data and analytics:
+  Felipe is an [advanced analytics and data visualisation consultant](https://feliperego.github.io/about) helping organisations improve performance through data and analytics:
 
-  - I help organisations improve revenue performance by exploring how products are sold, services are consumed and customers shop.
-  - I partner with marketing and retention teams to identify which customers are at risk of leaving way before they do.
-  - I support strategy teams in identifying which combination of products and services make the most sense for their organisations.
-  - I build data and reporting solutions for finance teams to allow for better operations monitoring and performance improvement.
+  Organisations seek my services when they need help with:
+
+  - Finding extra revenue from existing customers by exploring how products are sold, services are consumed and customers shop.
+  - Identifying  which customers are at risk of leaving many days before they do.
+  - Optimising the combination of products and services that make the most sense to their business.
+  - Monitoring of sales,campaign and operational activities.
 
   I'm available to consult, advise and/or develop advanced data analytics and visualisation solutions with marketing, digital, sales, operations, finance, technology and strategy teams across Australia.
 actions:

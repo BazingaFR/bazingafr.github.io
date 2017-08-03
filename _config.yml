@@ -25,7 +25,7 @@ author:
   picture: /assets/images/myface.png
 twitter_username: FelipeRego
 github_username: FelipeRego
-logo: /assets/images/B-3.png # path of site logo, e.g. "/assets/images/logo.png"
+logo: /assets/images/logo.png # path of site logo, e.g. "/assets/images/logo.png"
 
 # Build settings
 markdown: kramdown
@@ -39,7 +39,7 @@ feed:
   path: atom.xml
 
 # Pagination - https://jekyllrb.com/docs/pagination/
-paginate: 10
+paginate: 5
 paginate_path: /page:num/
 
 # Exclude from processing.
