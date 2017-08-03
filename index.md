@@ -3,7 +3,7 @@ layout: home
 paginate: true
 alt_title: "Advanced Analytics & Data Visualisation"
 sub_title: "Helping teams build, manage and enhance their data science capabilities."
-image: /assets/images/front.jpg
+
 introduction: |
   Basically Basic is a [Jekyll theme](https://jekyllrb.com/docs/themes/) meant as a substitute for the default --- [Minima](https://github.com/jekyll/minima). Conventions and features found there are fully supported by **Basically Basic**, with a few enhancements thrown in for good measure:
 
