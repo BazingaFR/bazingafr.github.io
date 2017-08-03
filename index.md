@@ -5,12 +5,12 @@ alt_title: "Advanced Analytics & Data Visualisation"
 sub_title: "Helping teams build, manage and enhance their data science capabilities."
 
 introduction: |
-  Hi there, I'm Felipe. I'm an [advanced analytics and data visualisation consultant](https://feliperego.github.io/about). As an independent data science partner, I help teams improve their organisations performance through the use of data and analytics.
+  Hi there, I'm Felipe. I'm an [advanced analytics and data visualisation consultant](https://feliperego.github.io/about). As an independent data science partner, I help teams improve their organisations performance through the use of data and analytics:
 
-  Basically Basic is a [Jekyll theme](https://jekyllrb.com/docs/themes/) meant as a substitute for the default --- [Minima](https://github.com/jekyll/minima). Conventions and features found there are fully supported by **Basically Basic**, with a few enhancements thrown in for good measure:
-
-  - I can help you improve revenue by exploring how your products are sold, your services are consumed and your customers shop.
-  - I can help identify which customers may leave you way before they do.
+  - I help organisations improve revenue performance by exploring how products are sold, services are consumed and customers shop.
+  - I partner with marketing and retention teams to identify which customers are at risk of leaving way before they do.
+  - I support strategy teams in identifying which combination of products and services make the most sense for their organisations.
+  - I build data and reporting solutions for finance teams to allow for better operations monitoring and performance improvement.
 
   I'm also an [analytics instructor](https://generalassemb.ly/instructors/felipe-rego/7721) helping disseminate practical, actionable analytics and data visualisation techniques in both classrooms and online settings.
 
@@ -22,10 +22,10 @@ introduction: |
 
 
 actions:
-  - label: "Get in touch"
+  - label: "LinkedIn"
     icon: linkedin
-    url: "https://github.com/mmistakes/jekyll-theme-basically-basic"
-  - label: "Download"
-    icon: download
-    url: "https://github.com/mmistakes/jekyll-theme-basically-basic/archive/master.zip"
----
+    url: "https://www.linkedin.com/in/feliperego/"
+  - label: "Twitter"
+    icon: twitter
+    url: "https://twitter.com/FelipeRego"
+ ---
