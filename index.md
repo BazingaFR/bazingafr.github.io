@@ -6,7 +6,7 @@ sub_title: "Helping organisations improve performance through data and analytics
 introduction: |
   Felipe is an [advanced analytics and data visualisation consultant](https://feliperego.github.io/about) helping organisations improve performance through data and analytics:
 
-  Organisations seek Felipe's help when they need to:
+  Organisations seek Felipe's help when they need to  :
 
   - Find extra revenue from existing customers by exploring how products are sold, services are consumed and customers shop.
   - Identify  which customers are at risk of leaving many days before they do.
