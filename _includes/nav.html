@@ -1,0 +1,156 @@
+<style>
+    .contain-to-grid{
+        -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 1px 5px 0 rgba(0,0,0,0.12),0 3px 1px -2px rgba(0,0,0,0.2);
+        box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 1px 5px 0 rgba(0,0,0,0.12),0 3px 1px -2px rgba(0,0,0,0.2);
+        background-color: #ffffff;
+        collapse: #e5e5e5;
+    }
+    .top-bar{
+        padding: 0px;
+        background-color: #ffffff;
+    }
+    @media only screen and (min-width: 64.063em) {
+        .contain-to-grid{
+            height: 3rem;
+        }
+        .top-bar{
+            padding: 0px;
+            background-color: #ffffff;
+        }
+    } /* min-width 1025px, large screens */
+
+    @media only screen and (min-width: 90.063em) {
+
+        .contain-to-grid{
+            height: 4rem;
+        }
+        .top-bar{
+            padding: 12px;
+            background-color: #ffffff;
+        }
+
+        a.site-title {
+
+
+
+        }
+    } /* min-width 1441px, xlarge screens */
+</style>
+
+<div class='contain-to-grid sticky'>
+
+<nav class="top-bar" data-topbar role="navigation">
+    <ul class="title-area">
+      <li class="name"> 
+          {% if site.logo %}
+              <a href="{{ '/' | absolute_url }}" class="site-title" style=" color: #444444; font-size:x-large; font-weight: bolder;"><img src="{{ site.logo | relative_url }}" alt="{{ site.name }}"></a>
+              {% else %}
+              <a href="{{ '/' | relative_url }}"  style=" color: #444444; font-size:x-large; font-weight: bolder;">{{ site.name }}</a>
+              {% endif %}
+      </li>
+        <!-- <li class="name">
+            <h1>
+              
+            </h1>
+        </li> -->
+    </ul>
+
+    <section class="top-bar-section">
+        <!-- Right Nav Section -->
+        <ul class="right">
+         <!--   <li class="active"><a href="#">Right Button Active</a></li>-->
+
+        </ul>
+
+    </section>
+</nav>
+
+
+
+
+
+{% if site.minimalist-nav %}
+
+<div id="minimalNav">
+  <div class="header">
+    <div class="container">
+      <div class="menu">
+        <a href="" id="menuToggle"> <span class="navClosed"></span> </a>
+        <nav>
+          <a href="{{ '/#home' | relative_url }}" class="active scroll">Home</a>
+          <a href="{{ 'blog' | relative_url }}">Blog</a>
+          {% if page.navPage == 'homePage' %}
+          <a href="{{ '/#about-me' | relative_url }}" class="scroll">About Me</a>
+          <a href="{{ '/#portfolio' | relative_url }}" class="scroll">Portfolio</a>
+          <a href="{{ '/#services' | relative_url }}" class="scroll">Services</a>
+          <a href="{{ '/#testimonials' | relative_url }}" class="scroll">Testimonials</a>
+          <a href="{{ '/#contract' | relative_url }}" class="scroll">Contact</a>
+          {% else %}
+          <a href="{{ 'blog/categories' | absolute_url }}">Categories</a>
+          {% endif %}
+        </nav>
+      </div>
+      <div class="clearfix"> </div>
+    </div>
+  </div>
+</div>
+      <!-- header -->
+      {% else %}
+    <nav class='top-bar' data-options='sticky_on: large' data-topbar=''>
+          <ul class='title-area'>
+            <li class='name'>
+              <h1>
+                <!--<img src="{{ 'assets/images/logo.png' | relative_url }}"> -->
+                <a href="{{ '/' | absolute_url }}">{{ site.name }}</a>
+              </h1>
+            </li>
+            <li class='toggle-topbar menu-icon'>
+              <a href="#">Menu</a>
+            </li>
+          </ul>
+          <section class='top-bar-section'>
+            <ul class="right">
+                  <li class="active">
+                    <a href="#home">Home</a>
+                  </li>
+                  <li class=""><a href="{{ 'blog' | relative_url }}">Blog</a></li>
+                  <li class="">
+                    <a href="services.html">Services</a>
+                  </li>
+                  <li class="">
+                    <a href="about.html">About</a>
+                  </li>
+                  <li class=" ">
+                    <a href="portfolio.html">Portfolio</a>
+                  </li>
+                  <li class="">
+                    <a href="#contract">Contract</a>
+                  </li>
+            </ul>
+          </section>
+        </nav>
+
+{% endif %}
+
+
+  <script>
+    (function ($) {
+      // Menu Functions
+      $(document).ready(function () {
+        $('#menuToggle').click(function (e) {
+          var $parent = $(this).parent('.menu');
+          $parent.toggleClass("open");
+          var navState = $parent.hasClass('open') ? "hide" : "show";
+          $(this).attr("title", navState + " navigation");
+          // Set the timeout to the animation length in the CSS.
+          setTimeout(function () {
+            console.log("timeout set");
+            $('#menuToggle > span').toggleClass("navClosed").toggleClass("navOpen");
+          }, 200);
+          e.preventDefault();
+        });
+      });
+    })(jQuery);
+  </script>
+
+      </div>

@@ -1,0 +1,107 @@
+// Foundation by ZURB
+// foundation.zurb.com
+// Licensed under MIT Open Source
+
+// Make sure the charset is set appropriately
+@import "component/color";
+// Behold, here are all the Foundation components.
+@import 'foundation/components/grid';
+@import 'foundation/components/accordion';
+//@import 'foundation/components/alert-boxes';
+@import 'foundation/components/block-grid';
+@import 'foundation/components/breadcrumbs';
+@import 'foundation/components/button-groups';
+@import 'foundation/components/buttons';
+@import 'foundation/components/clearing';
+@import 'foundation/components/dropdown';
+@import 'foundation/components/dropdown-buttons';
+@import 'foundation/components/flex-video';
+@import 'foundation/components/forms';
+@import 'foundation/components/icon-bar';
+@import 'foundation/components/inline-lists';
+@import 'foundation/components/joyride';
+@import 'foundation/components/keystrokes';
+@import 'foundation/components/labels';
+@import 'foundation/components/magellan';
+@import 'foundation/components/orbit';
+@import 'foundation/components/pagination';
+@import 'foundation/components/panels';
+@import 'foundation/components/pricing-tables';
+@import 'foundation/components/progress-bars';
+@import 'foundation/components/range-slider';
+@import 'foundation/components/reveal';
+@import 'foundation/components/side-nav';
+@import 'foundation/components/split-buttons';
+@import 'foundation/components/sub-nav';
+@import 'foundation/components/switches';
+@import 'foundation/components/tables';
+@import 'foundation/components/tabs';
+@import 'foundation/components/thumbs';
+@import 'foundation/components/tooltips';
+@import 'foundation/components/top-bar';
+@import 'foundation/components/type';
+@import 'foundation/components/offcanvas';
+@import 'foundation/components/visibility';
+
+
+///component
+@import "component/fontello";
+@import "component/slider";
+@import "component/coustom";
+
+
+/*
+
+@import
+"../node_modules/spinkit/scss/spinners/1-rotating-plane",
+"../node_modules/spinkit/scss/spinners/2-double-bounce",
+"../node_modules/spinkit/scss/spinners/3-wave",
+"../node_modules/spinkit/scss/spinners/4-wandering-cubes",
+"../node_modules/spinkit/scss/spinners/5-pulse",
+"../node_modules/spinkit/scss/spinners/6-chasing-dots",
+"../node_modules/spinkit/scss/spinners/7-three-bounce",
+"../node_modules/spinkit/scss/spinners/8-circle",
+"../node_modules/spinkit/scss/spinners/9-cube-grid",
+"../node_modules/spinkit/scss/spinners/10-fading-circle",
+"../node_modules/spinkit/scss/spinners/11-folding-cube";
+*/
+
+
+@import "libs/github-markdown";
+@import "component/minimalist";
+@import "component/blog";
+
+.site-name {
+  text-transform: uppercase;
+}
+
+/*-- bottom-to-top --*/
+
+#toTop {
+  display: none;
+  text-decoration: none;
+  position: fixed;
+  bottom: 24px;
+  right: 3%;
+  overflow: hidden;
+  z-index: 999;
+  width: 32px;
+  height: 32px;
+  border: none;
+  text-indent: 100%;
+  background: url(../images/icons/move-top.png) no-repeat 0px 0px;
+}
+
+#toTopHover {
+  width: 32px;
+  height: 32px;
+  display: block;
+  overflow: hidden;
+  float: right;
+  opacity: 0;
+  -moz-opacity: 0;
+  filter: alpha(opacity=0);
+}
+/*-- //bottom-to-top --*/
+
+

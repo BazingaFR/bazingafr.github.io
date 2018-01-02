@@ -1,35 +1,46 @@
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta content='width=device-width, initial-scale=1.0' name='viewport'>
+      <!-- meta-tags -->
+      {% seo %}
+      {% feed_meta %}
+      <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic|Droid+Serif:400,700,400italic,700italic' rel="stylesheet" type='text/css'>
+      <link href="{{ 'assets/css/main.css' | relative_url }}" rel="stylesheet">
+      <link href="{{ 'assets/css/syntax.css' | relative_url }}" rel="stylesheet">
+      
+      <link href="{{ 'assets/css/cm-overlay.css' | relative_url }}" rel="stylesheet">
+      <link href="{{ 'assets/css/lightbox.css' | relative_url }}" rel="stylesheet">
 
-  {% if site.gems contains 'jekyll-seo-tag' %}
-    {% comment %}
-      Add metadata for search engines and social networks if jekyll-seo-tag plugin is enabled
-    {% endcomment %}
-    {% include head-seo.html %}
-  {% else %}
-    <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
-    <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
-    <link rel="canonical" href="{{ page.url | replace:'index.html', '' | absolute_url }}">
-  {% endif %}
+      <script src="{{ 'assets/js/modernizr.js' | relative_url }}"></script>
+      <script src="{{ 'assets/js/jquery.min.js' | relative_url }} "></script>
+      <script type="application/x-javascript">
 
-  <script>
-    /* Cut the mustard */
-    if ( 'querySelector' in document && 'addEventListener' in window ) {
-      document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + 'js';
-    }
-  </script>
+      	if( window.location.pathname == '/'){
+          addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+          }, false);
 
-  <link rel="stylesheet" href="{{ '/assets/stylesheets/main.css' | relative_url }}">
-  {% if site.data.theme.google_fonts %}
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family={% for font in site.data.theme.google_fonts %}{{ font.name | replace: ' ', '+' }}{% if font.weights %}:{% endif %}{{ font.weights | remove: ' ' }}{% if forloop.last != true %}|{% endif %}{% endfor %}">
-  {% endif %}
+          function hideURLbar() {
+            window.scrollTo(0, 1);
+          }
+        }
+      </script>
 
-  {% if site.gems contains 'jekyll-feed' %}
-    {% comment %}
-      Add Atom feed link if jekyll-feed plugin is enabled
-    {% endcomment %}
-    {% include head-feed.html %}
-  {% endif %}
-</head>
+      <link rel="stylesheet" href="{{ 'assets/plugins/highlight.js/styles/atom-one-dark.css' | relative_url }}">
+      <script src="{{ 'assets/plugins/highlight.js/highlight.pack.js' | relative_url }}"></script>
+
+      <script>
+        hljs.initHighlightingOnLoad();
+        $(document).ready(function() {
+          $('pre code').each(function(i, block) {
+            hljs.highlightBlock(block);
+          });
+        });
+      </script>
+
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+      </script>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'></script>
+      <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a33e29e7820fd001360af54&product=inline-share-buttons"></script>
+      {% if site.google_ad_client %}{% include google_analytics.html %}{% endif %} 

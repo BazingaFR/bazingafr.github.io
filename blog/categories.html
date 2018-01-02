@@ -1,0 +1,30 @@
+---
+layout: blog
+permalink: /blog/categories/
+title: Categories
+breadcrumb: Categories
+---
+<style type="text/css">
+    .mrs_hn{
+        h3, h4 {
+            text-transform: capitalize;
+
+        }
+        ul, li {
+            list-style: none;
+        }
+    }
+</style>
+<div class="row mrs_hn">
+    {% for category in site.categories %}
+        {% capture category_name %}{{ category | first }}{% endcapture %}
+        <h3 class="category-head">{{ category_name }}</h3>
+            <ul class="list">
+            {% for post in site.categories[category_name] %}
+                <li><h4>
+                    <a href="{{ post.url }}" style="text-transform: capitalize;">{{ post.title }}</a> 
+                </h4></li>
+            {% endfor %}
+            </ul>
+    {% endfor %}
+</div>

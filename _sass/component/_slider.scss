@@ -1,0 +1,74 @@
+
+.orbit-container {
+  .orbit-timer {
+    display: none;
+  }
+  .orbit-slide-number {
+    display: none;
+  }
+  .orbit-bullets-container {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+  }
+  .orbit-slides-container {
+    li .orbit-caption {
+      top: 60px;
+    }
+    > * .orbit-caption {
+      background-color: transparent;
+    }
+  }
+  img {
+    width: 100%;
+  }
+}
+.caption-right {
+  text-align: right;
+}
+.caption-center {
+  text-align: center;
+}
+@media only screen and(max-width: 480px) {
+  .orbit-caption {
+    h2 {
+      font-size: 18px;
+      position: relative;
+      top: -50px;
+    }
+    p {
+      font-size: 18px;
+      position: relative;
+      top: -50px;
+    }
+  }
+}
+.orbit-caption h2 {
+  color: $white;
+  background-color: $steel;
+  display: inline-block;
+  padding: 9px 10px 4px;
+  font-size: 2.75rem;
+  letter-spacing: 3px;
+}
+.testimonials .orbit-container {
+  .orbit-bullets-container {
+    position: static;
+  }
+  .orbit-prev {
+    display: none;
+  }
+  .orbit-next {
+    display: none;
+  }
+  .orbit-bullets li {
+    border: 1px solid $white;
+    margin-right: 15px;
+    width: 16px;
+    height: 16px;
+    background: none;
+    &.active {
+      background: $white;
+    }
+  }
+}

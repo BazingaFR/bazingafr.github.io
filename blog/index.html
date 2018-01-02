@@ -1,0 +1,64 @@
+---
+layout: blog
+breadcrumb: Blog
+---
+<style>
+
+</style>
+
+
+
+<div class="row" id="content">
+    <div class="medium-9 columns posts">
+        {% for post in paginator.posts %}
+        <div class="blog-post">
+            <h3 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+            <p>  {% if post.author %}
+                author: <a href="#">{{ post.author }}|</a>
+                 {% endif %}
+                Date: {{ post.date | date: "%d, %b, %y"  }} {% if post.tags %}
+                | Tags: {{ post | tags }}
+                {% endif %}
+                </p>
+            <p> {{ post.excerpt }}</p>
+        </div>
+        <hr>
+        {% endfor %}
+
+        <div class="row column">
+            {% if paginator.total_pages > 1 %}
+            <ul class="pagination" role="navigation" aria-label="Pagination">
+                {% if paginator.previous_page %}
+                <li><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"
+                       aria-label="Prev page">Prev</a></li>
+                {% else %}
+                <li class="disabled">Previous</li>
+                {% endif %}
+
+                {% for page in (1..paginator.total_pages) %}
+                {% if page == paginator.page %}
+                <li class="current"><span class="show-for-sr">You're on page</span>{{ page }}</li>
+
+                {% elsif page == 1 %}
+                <li><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"
+                       aria-label="Page {{ page }}">{{ page }}</a></li>
+                {% else %}
+                <li>
+                    <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}"
+                       aria-label="Page {{ page }}">{{ page }}</a></li>
+                {% endif %}
+                {% endfor %}
+
+                {% if paginator.next_page %}
+                <li><a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}"
+                       aria-label="Next page">Next</a></li>
+                {% else %}
+                <li class="disabled">Next</li>
+                {% endif %}
+            </ul>
+            {% endif %}
+        </div>
+    </div>
+    <!--./blog main-->
+    {% include blog/sitebar.html %}
+</div>

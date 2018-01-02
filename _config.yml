@@ -1,77 +1,127 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-lang: en-US
-title: Felipe Rego
-email: info@feliperego.com.au
-description: "Helping teams build, manage and enhance their data science capabilities."
-baseurl: # the optional subpath of your site, e.g. "/blog"
-url: https://bazingafr.github.io# the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-author:
-  name: Felipe Rego
-  twitter: FelipeRego
-  picture: /assets/images/myface.png
-twitter_username: FelipeRego
-github_username: FelipeRego
-logo: /assets/images/logo.png # path of site logo, e.g. "/assets/images/logo.png"
-
-# Build settings
-markdown: kramdown
-theme: jekyll-theme-basically-basic
-gems:
-  - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-sitemap
-  - jekyll-paginate
-feed:
-  path: atom.xml
-
-# Pagination - https://jekyllrb.com/docs/pagination/
-paginate: 5
-paginate_path: /page:num/
-
-# Exclude from processing.
-exclude:
-  - .asset-cache
-  - .bundle
-  - .codeclimate.yml
-  - .editorconfig
-  - .gitattributes
-  - .jekyll-assets-cache
-  - .sass-cache
-  - .scss-lint.yml
-  - CHANGELOG
-  - Gemfile
-  - Gemfile.lock
-  - LICENSE
-  - node_modules
-  - Rakefile
-  - README
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
-  - /docs # ignore Basically Basic sample site
-  - /example # ignore Basically Basic dev site
-
-# Front Matter Defaults
 defaults:
-  # _posts
+  - scope:
+      path: "assets/images/slider"
+    values:
+      slider_image: true
+
+  - scope:
+      path: "assets/images/clients_img"
+    values:
+      client_img: true
+
+  - scope:
+      path: "assets/images/projects"
+    values:
+      projects_image: true
+
   - scope:
       path: "_posts"
-      type: posts
+      type: "posts"
     values:
-      layout: post
-      read_time: true
+      layout: "post"
+      comments: "true"
+
+  - scope:
+      type: "pages"
+    values:
+      layout: "page"
+
+
+permalink: /blog/:title/
+paginate: 9
+paginate_path: "/blog/page:num/"
+
+name: feliperego
+title: Example Companey
+email: example@gmail.com
+phone: +8801856120120
+address: 1230 Dhaka , Bangladesh
+description: > # this means to ignore newlines until "baseurl:"
+  description there
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+lang: en
+minimalist-nav: true
+theme: bazingafr.github.io
+
+
+webmaster_verifications: # seo
+  google:
+  bing:
+
+google_analytics: #google analytics
+google_ad_client: 
+
+timezone: Dhaka/Bangladesh  # your timezone
+
+logo: /assets/images/logo.png # logo url
+
+author: jubayed # author name
+
+
+
+#
+
+tag_page_layout: tag_page
+tag_page_dir: tag
+
+tag_feed_layout: tag_feed
+tag_feed_dir: tag
+
+tag_permalink_style: pretty
+ignored_tags: [tags,to,ignore]
+
+tag_page_data:
+  sitemap: false
+
+#
+
+jekyll-archives:
+  enabled: []
+  layout: 'archive'
+  permalinks:
+    year: '/:year/'
+    month: '/:year/:month/'
+    day: '/:year/:month/:day/'
+    tag: '/tag/:name/'
+    category: '/category/:name/'
+
+enabled: all
+enabled:
+  - categories
+enabled:
+  - year
+  - month
+  - tags    
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-github-metadata
+  - jekyll-archives
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+
+exclude:
+#  - .gitignore
+#  - README.md
+   - Gemfile
+   - Gemfile.lock
+   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
+
+enabled: all
+enabled:
+  - categories
+enabled:
+  - year
+  - month
+  - tags

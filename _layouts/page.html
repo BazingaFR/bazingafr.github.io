@@ -1,17 +1,19 @@
 ---
 layout: default
 ---
+<style>
+    .page {
+        margin: 0;
+        padding: 0;
+    }
+</style>
+<div class='row'>
+    <div class="row" id="content">
+        <div class="small-12 columns">
+            <div class="page markdown-body">
+                {{ content }}
+            </div>
+        </div>
+    </div>
+</div>
 
-{% include page-intro.html %}
-
-<main id="main" class="page-content" aria-label="Content">
-  <div class="inner">
-    <article class="entry-wrap">
-      <div class="entry-content">
-        {{ content }}
-      </div>
-    </article>
-
-    {% include footer.html %}
-  </div>
-</main>
