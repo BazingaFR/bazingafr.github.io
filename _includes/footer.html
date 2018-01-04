@@ -1,66 +1,19 @@
-      <div class='footer centered-text'>
-        <div class='spacing'></div>
-        <div class='row'>
-          <div class='large-12 columns'></div>
-          <h1 class='light site-name'>
-         <!--   <img src="{{ 'assets/images/logo-grey.png' | relative_url }}"> -->
-            <br>
-            <div class='spacing'></div>
-            {{ site.name }}
-          </h1>
-          <div class='spacing'></div>
-          <div class='spacing'></div>
-          <div class='socials centered-text'>
-            <a href='index.html#'>
-              <i class='icon-twitter grey'></i>
-            </a>
-            <a href='index.html#'>
-              <i class='icon-facebook grey'></i>
-            </a>
-            <a href='index.html#'>
-              <i class='icon-vimeo grey'></i>
-            </a>
-            <a href='index.html#'>
-              <i class='icon-mail grey'></i>
-            </a>
-          </div>
-          <p class='copyright'>Copyright 2017 {{ site.name }}</p>
+<!-- footer Start -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="footer-manu">
+          <ul>
+            <li><a href="{{ site.baseurl }}/">Home</a></li>
+            <li><a href="{{ site.baseurl }}/contact">Contact us</a></li>
+            <li><a href="#">How it works</a></li>
+            <li><a href="{{ site.baseurl }}/blog">Blog</a></li>
+            <li><a href="#">Terms</a></li>
+          </ul>
         </div>
+        <p>Copyright &copy; Design &amp; Developed by <a href="http://www.themefisher.com">Themefisher</a>. All rights reserved.</p>
       </div>
-
-
-
-          <script src="{{ 'assets/js/jquery.tools.min.js' | relative_url }}"></script>
-          <script src="{{ 'assets/js/jquery.mobile.custom.min.js' | relative_url }}"></script>
-            <script src="{{ 'assets/js/jquery.cm-overlay.js' | relative_url }}"></script>
-
-      <script src="{{ 'assets/js/foundation.min.js' | relative_url }} "></script>
-      <script src="{{ 'assets/js/jquery.countTo.js' | relative_url }} "></script>
-      <script src="{{ 'assets/js/jquery.appear.js' | relative_url }} "></script>
-      <script src="{{ 'assets/js/app.js' | relative_url }} "></script>
-
-
-	<script type="text/javascript">
-	 $(document).foundation();
-
-        $('.cm-overlay').cmOverlay();
-		jQuery(document).ready(function ($) {
-
-		    if( window.location.pathname == '/'){
-
-                $(".scroll").click(function (event) {
-
-                  if( window.location.hash){
-                         window.history.replaceState({}, document.title, window.location.href.split('#')[0]);
-                   }
-				    event.preventDefault();
-
-				$('html,body').animate({
-					scrollTop: $(this.hash).offset().top
-				}, 1000);
-			});
-		    }
-
-		});
-	</script>
-	<!-- //end-smooth-scrolling -->
+    </div>
+  </div>
+</footer>

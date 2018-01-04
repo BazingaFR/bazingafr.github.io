@@ -1,46 +1,40 @@
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <meta content='width=device-width, initial-scale=1.0' name='viewport'>
-      <!-- meta-tags -->
-      {% seo %}
-      {% feed_meta %}
-      <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic|Droid+Serif:400,700,400italic,700italic' rel="stylesheet" type='text/css'>
-      <link href="{{ 'assets/css/main.css' | relative_url }}" rel="stylesheet">
-      <link href="{{ 'assets/css/syntax.css' | relative_url }}" rel="stylesheet">
-      
-      <link href="{{ 'assets/css/cm-overlay.css' | relative_url }}" rel="stylesheet">
-      <link href="{{ 'assets/css/lightbox.css' | relative_url }}" rel="stylesheet">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-      <script src="{{ 'assets/js/modernizr.js' | relative_url }}"></script>
-      <script src="{{ 'assets/js/jquery.min.js' | relative_url }} "></script>
-      <script type="application/x-javascript">
+<!-- CSS -->
+<link rel="stylesheet" href="{{ site.baseurl }}/css/owl.carousel.css" />
+<link rel="stylesheet" href="{{ site.baseurl }}/css/bootstrap.min.css" />
+<link rel="stylesheet" href="{{ site.baseurl }}/css/font-awesome.min.css" />
+<link rel="stylesheet" href="{{ site.baseurl }}/css/airspace.css" />
+<link rel="stylesheet" href="{{ site.baseurl }}/css/style.css" />
+<link rel="stylesheet" href="{{ site.baseurl }}/css/ionicons.min.css" />
+<link rel="stylesheet" href="{{ site.baseurl }}/css/animate.css" />
+<link rel="stylesheet" href="{{ site.baseurl }}/css/responsive.css" />
+<link rel="stylesheet" href="{{ site.baseurl }}/css/syntax.css" />
 
-      	if( window.location.pathname == '/'){
-          addEventListener("load", function () {
-            setTimeout(hideURLbar, 0);
-          }, false);
+<!-- Js -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+<script src="{{ site.baseurl }}/js/bootstrap.min.js"></script>
+<script src="{{ site.baseurl }}/js/owl.carousel.min.js"></script>
+<script src="{{ site.baseurl }}/js/plugins.js"></script>
+<script src="{{ site.baseurl }}/js/min/waypoints.min.js"></script>
+<script src="{{ site.baseurl }}/js/jquery.counterup.js"></script>
 
-          function hideURLbar() {
-            window.scrollTo(0, 1);
-          }
-        }
-      </script>
 
-      <link rel="stylesheet" href="{{ 'assets/plugins/highlight.js/styles/atom-one-dark.css' | relative_url }}">
-      <script src="{{ 'assets/plugins/highlight.js/highlight.pack.js' | relative_url }}"></script>
+<script src="{{ site.baseurl }}/js/main.js"></script>
 
-      <script>
-        hljs.initHighlightingOnLoad();
-        $(document).ready(function() {
-          $('pre code').each(function(i, block) {
-            hljs.highlightBlock(block);
-          });
-        });
-      </script>
-
-      <script type="text/x-mathjax-config">
-        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
-      </script>
-      <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'></script>
-      <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a33e29e7820fd001360af54&product=inline-share-buttons"></script>
-      {% if site.google_ad_client %}{% include google_analytics.html %}{% endif %} 
+<!--
+/*
+ * Airspace
+ * Ported to Jekyll by Andrew Lee
+ * https://github.com/luminousrubyist/airspace-jekyll
+ * Designed and Developed by ThemeFisher
+ * https://themefisher.com/
+ *
+ */
+-->

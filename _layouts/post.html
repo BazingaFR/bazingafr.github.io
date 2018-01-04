@@ -1,50 +1,26 @@
 ---
-layout: default
+layout: page
 ---
 
-<style>
-    .page {
-        margin: 0;
-        padding: 0;
-    }
-</style>
-<div class='row'>
-    <div class="row" id="content">
-        <div class="medium-9 columns single-post">
-            <div class='two spacing'></div>
-            <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-
-                <header class="post-header">
-                    <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
-                    <p class="post-meta"> Date :
-                        <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-                            {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-                            {{ page.date | date: date_format }}
-                        </time>
-                        {% if page.author %}
-                        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>
-                        {% endif %}
-                        {% if page.tags %}
-                        <span itemprop="tags" ><span itemprop="tags">| Tags: {{ page | tags }}</span></span>
-                        {% endif %}
-                    </p>
-                    <div class="sharethis-inline-share-buttons"></div>
-                    <hr>
-                </header>
-
-                <div class="markdown-body" itemprop="articleBody">
-                    {{ content }}
-                </div>
-            </article>
-            {% if jekyll.environment == 'production' and site.disqus.shortname %}
-            {% include disqus_comments.html %}
-            {% endif %}
-        </div>
-        {% include blog/sitebar.html %}
+<div class="post">
+  <!-- Wrapper Start -->
+  <section id="intro" style="border: 1px dotted #ddd;">
+    <div class="container">
+      <div class="row">
+        <div>
+          <div class="block">
+            <h1>{{ page.title }}</h1>
+            <div class="post-info-wrapper">
+              <p class="italic">By <span class="bold">{{ page.author }}</span> on <span class="bold">{{ page.date | date: "%B %-d, %Y" }}</span></p>
+            </div>
+            <hr />
+            <p>{{ content }}</p>
+          </div>
+        </div><!-- .col-md-7 close -->
+      </div>
     </div>
+  </section>
 </div>
-
-
-
-
-
+<p class="center-text" style="padding: 30px;">
+  <a href="{{ site.baseurl }}/blog">Back to blog</a>
+</p>
