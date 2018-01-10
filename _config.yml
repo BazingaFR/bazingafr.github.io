@@ -3,7 +3,7 @@ title:              Felipe Rego
 bio:                'Helping teams build, manage and enhance their data science capabilities'
 description:        "Helping teams build, manage and enhance their data science capabilities"
 locale:             en_US
-baseurl: "bazingafr.github.io" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 
 defaults:
