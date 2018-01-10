@@ -1,14 +1,12 @@
 ---
-title: 'Introduction to Principal Component Analysis (PCA) in Unsupervised Learning Settings'
 layout: post
+title:  "Introduction to Principal Component Analysis (PCA) in Unsupervised Learning Settings"
 date: 2016-05-31
-permalink: /blog/2016/05/31/Intro-To-Principal-Component-Analysis
-tags:
-  - Unsupervised Learning
-  - PCA
-  - 3D Graphs
-  - R
+excerpt: "Huge thanks to HTML5 UP for making this awesome template! Let's see what it can do"
+image: "/images/pic02.jpg"
 ---
+
+
 
 Principal Component Analysis (PCA) is a popular method used in statistical learning approaches. PCA can be used to achieve dimensionality reduction in regression settings allowing us to explain a high-dimensional dataset with a smaller number of representative variables which, in combination, describe most of the variability found in the original high-dimensional data.
 

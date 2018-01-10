@@ -1,0 +1,38 @@
+---
+layout: page
+title: Felipe Rego | Data Science | Advanced Analytics | Insights | Strategy | feliperego.com.au
+description: Felipe is a leading advanced analytics and data science partner, helping teams build, manage and enhance their data science and visualisation solutions in a strategically-aligned, commercially-oriented and customer-centred way.
+sitemap:
+    priority: 0.7
+    lastmod: 2017-11-02
+    changefreq: weekly
+---
+## About Felipe
+
+<span class="image left"><img src="{{ "/images/pic04.jpg" | absolute_url }}" alt="" /></span>
+
+Felipe is a leading advanced analytics and data science partner, helping teams build, manage and enhance their data science and visualisation solutions in a strategically-aligned, commercially-oriented and customer-centred way.
+
+With an extensive industry experience as well as a deep, technical analytical expertise, Felipe is often required by marketing, sales, finance, technology and strategy teams to provide support and to deliver robust analytical solutions that are easy to use, understand and implement. Felipe’s unique methodology focuses on a holistic organisational approach to using data and science to improve performance and reduce costs.
+
+Felipe helps organisations and teams with Data Science and Analytics Strategy, Predictive Analytics and Machine Learning solutions, Data Visualisation and Insights Automation and Analytical Training and Workshops.
+
+Felipe is also an analytics instructor helping disseminate practical, actionable analytics and data visualisation techniques in both classrooms and online settings.
+
+When Felipe is not partnering with clients or helping students, he’s an M.Phil. research candidate in Learning Analytics at the University of Sydney making sense of students’ digital traces and the role learning analytics dashboards play in influencing learning outcomes.
+
+Felipe is also a blogger in predictive analytics, statistical learning and data visualisation.
+
+### Did you know?
+<div class="box">
+  <p>
+  Last year alone, Felipe had over 62,000 visitors to his blog from more than 180+ countries. Some of his articles have been ranked #1 in google search and referenced by many sources and leading educational organisations including referrals / mentions from StackOverflow, Udacity, Western Michigan University, UC Santa Barbara, Edinburgh Napier University, among others.
+  </p>
+</div>
+<!--
+<span class="image left"><img src="{{ "/images/pic05.jpg" | absolute_url }}" alt="" /></span>
+
+On social media, we may share our own thoughts and advance our image notwithstanding spreading musings for different associations and affiliations. With such a critical number of associations with people and relationship on social media, our experience can be over-burden with a considerable measure of information.
+-->
+
+Felipe is available to consult, advise and/or develop advanced data analytics and visualisation solutions with marketing, digital, sales, operations, finance, technology and strategy teams across Australia.
