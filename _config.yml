@@ -3,7 +3,7 @@ title:              Felipe Rego
 bio:                'Helping teams build, manage and enhance their data science capabilities'
 description:        "Helping teams build, manage and enhance their data science capabilities"
 locale:             en_US
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "bazingafr.github.io" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 
 defaults:
@@ -11,12 +11,12 @@ defaults:
     path: ''
     type: posts
   values:
-    permalink: #"/blog/:title/"
+    permalink: "/blog/:title/"
     layout: post
     author:
 
 # Jekyll
-permalink:          #/blog/:title/
+permalink:          /blog/:title/
 markdown:           kramdown
 highlighter:        rouge
 kramdown:
@@ -55,7 +55,7 @@ gems:
   - jekyll-paginate
 
 paginate: 6
-paginate_path: #"/blog/page:num/"
+paginate_path: "/blog/page:num/"
 
 jekyll-mentions:
     base_url: https://github.com
