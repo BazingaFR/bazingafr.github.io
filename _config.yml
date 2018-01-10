@@ -4,7 +4,7 @@ bio:                'Helping teams build, manage and enhance their data science 
 description:        "Helping teams build, manage and enhance their data science capabilities"
 locale:             en_US
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "bazingafr.github.io" # the base hostname & protocol for your site
+url: "" # the base hostname & protocol for your site
 
 defaults:
 - scope:
