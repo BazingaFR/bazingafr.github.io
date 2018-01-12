@@ -7,7 +7,7 @@ sitemap:
     lastmod: 2017-11-02
     changefreq: weekly
 ---
-## About Felipe
+## A Strategic Data Science Partner
 
 <span class="image left"><img src="{{ "/images/pic04.jpg" | absolute_url }}" alt="" /></span>
 
@@ -36,3 +36,5 @@ On social media, we may share our own thoughts and advance our image notwithstan
 -->
 
 Felipe is available to consult, advise and/or develop advanced data analytics and visualisation solutions with marketing, digital, sales, operations, finance, technology and strategy teams across Australia.
+
+<h3>Get in touch</h3>

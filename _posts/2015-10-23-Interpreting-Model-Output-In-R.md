@@ -2,8 +2,8 @@
 layout: post
 title:  "Quick Guide: Interpreting Simple Linear Model Output in R"
 date: 2015-10-23
-excerpt: "Huge thanks to HTML5 UP for making this awesome template! Let's see what it can do"
-image: "/images/pic02.jpg"
+excerpt: "Linear regression models are a key part of the family of supervised learning models."
+image: "/images/lminterpret1.jpg"
 ---
 
 

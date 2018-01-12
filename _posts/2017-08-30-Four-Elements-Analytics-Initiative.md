@@ -2,8 +2,8 @@
 layout: post
 title:  "4 Elements That Can Make or Break Your Data Analytics Initiative"
 date: 2017-08-30
-excerpt: "Huge thanks to HTML5 UP for making this awesome template! Let's see what it can do"
-image: "/images/pic02.jpg"
+excerpt: "While all of these elements are non-data related, I'd argue they can have as much of an impact on your data analytics initiative as issues relating to data quality, choice of analytical tool, time spent fine-tuning algorithms, etc."
+image: "/images/4elements1.jpg"
 ---
 
 
@@ -14,7 +14,7 @@ While all of these elements are non-data related, I'd argue they can have as muc
 
 **1. The Right Level of Executive Sponsorship**
 
-![](https://github.com/FelipeRego/feliperego.github.io/raw/master/images/4elements_2.png)<!-- -->
+<span class="image fit"><img src="{{ "/images/4elements2.jpg" | absolute_url }}" alt="" /></span>
 
 If there is one single element that I believe can have great influence in the success of your data analytics project is the level of involvement your manager or project sponsor has in your strategy or project.
 
@@ -30,7 +30,7 @@ A suggestion here is to make sure you constantly communicate with all involved, 
 
 **2. A Clearly Defined Set of Questions**
 
-![](https://github.com/FelipeRego/feliperego.github.io/raw/master/images/4elements_3.png)<!-- -->
+<span class="image fit"><img src="{{ "/images/4elements3.jpg" | absolute_url }}" alt="" /></span>
 
 More often than not, data analytics initiatives start and finish with unclear set of questions it intends to have answers for at the end of its endeavour. Requests for data analytics initiatives, for example, can arise from a set of people who are experiencing a specific customer, product or service issue.
 
@@ -44,7 +44,7 @@ Here, my suggestion is that you work in combination with both your team and all 
 
 **3. The Right Mix of Talent**
 
-![](https://github.com/FelipeRego/feliperego.github.io/raw/master/images/4elements_4.png)<!-- -->
+<span class="image fit"><img src="{{ "/images/4elements4.jpg" | absolute_url }}" alt="" /></span>
 
 In any analytics project, you'll most likely need a mix of both generalist and specialist analytical skills. You'll need as much of the Machine Learning, AI and Statistics gun as of the less technical individual with a deep knowledge of the domain you're operating in.
 
@@ -60,7 +60,7 @@ If you are hiring for a long-term resource to grow in your team or organisation,
 
 **4. The Political Environment**
 
-![](https://github.com/FelipeRego/feliperego.github.io/raw/master/images/4elements_5.png)<!-- -->
+<span class="image fit"><img src="{{ "/images/4elements5.jpg" | absolute_url }}" alt="" /></span>
 
 Culture, power and politics are elements that can affect your data analytics initiative the most. This is because analytical problem-solving doesn't create itself out of thin air (yet). It relies on humans, with all of its beauties and flaws, to get things defined, built, managed, fine-tuned. And people can be heavily influenced by the environment they spend most of their time in.
 
@@ -76,7 +76,7 @@ I'd also suggest clarifying the appropriate amount of formal authority you'll ne
 
 Lastly, it's important to constantly monitor whether you are getting the right amount of support you need from your peers and boss to get your project across the line. Particularly, whether you are getting the right amount of exposure from your managers and giving the right amount of exposure to your team. You should aim at delivering upward results (to your managers and stakeholders) as well as getting downward support (for you and for your team).
 
-![](https://github.com/FelipeRego/feliperego.github.io/raw/master/images/4elements_6.png)<!-- -->
+<span class="image fit"><img src="{{ "/images/4elements6.jpg" | absolute_url }}" alt="" /></span>
 
 ***
 

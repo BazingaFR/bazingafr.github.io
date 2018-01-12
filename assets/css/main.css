@@ -3183,8 +3183,25 @@
 				}
 
 		#intro h1 {
+			-moz-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.5s ease, -moz-transform 0.5s ease, visibility 0.5s;
+			-webkit-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.5s ease, -webkit-transform 0.5s ease, visibility 0.5s;
+			-ms-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.5s ease, -ms-transform 0.5s ease, visibility 0.5s;
+			transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.5s ease, transform 0.5s ease, visibility 0.5s;
+			-moz-pointer-events: auto;
+			-webkit-pointer-events: auto;
+			-ms-pointer-events: auto;
+			pointer-events: auto;
+			border-style: solid;
+			border-color: #ffffff;
+			border-width: 5px !important;
+			font-family: "Source Sans Pro", Helvetica, sans-serif;
 			font-size: 5rem;
+			font-weight: 900;
+			letter-spacing: 0.075em;
 			line-height: 1;
+			padding: 1rem 1.75rem;
+			text-transform: uppercase;
+			visibility: visible;
 		}
 
 		#intro p {
@@ -4470,13 +4487,47 @@
 			opacity: 0.5;
 		}
 
-		body.is-navPanel-visible #navPanel {
-			-moz-transform: translateX(0);
-			-webkit-transform: translateX(0);
-			-ms-transform: translateX(0);
-			transform: translateX(0);
-			box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.2);
-			visibility: visible;
-		}
 
-	}
+
+
+
+
+
+/* Share buttons */
+.sharebuttons {
+  margin: 0 auto 0 auto;
+}
+
+.sharebuttons ul {
+  margin: 20px 0 0 0;
+  text-align: center;
+}
+
+.sharebuttons ul li {
+  display: inline;
+}
+
+.sharebuttons ul li a {
+  text-decoration: none;
+}
+
+.sharebuttons ul li svg {
+  width: 40px;
+  height: 40px;
+}
+
+.sharebuttons .reddit svg {
+  fill: #FF4500;
+}
+
+.sharebuttons .hn svg {
+  fill: #F0652F;
+}
+
+.sharebuttons .twitter svg {
+  fill: #1DA1F2;
+}
+
+.sharebuttons .linkedin svg {
+  fill: #0077B5;
+}

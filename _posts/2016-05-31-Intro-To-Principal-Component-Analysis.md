@@ -2,8 +2,8 @@
 layout: post
 title:  "Introduction to Principal Component Analysis (PCA) in Unsupervised Learning Settings"
 date: 2016-05-31
-excerpt: "Huge thanks to HTML5 UP for making this awesome template! Let's see what it can do"
-image: "/images/pic02.jpg"
+excerpt: "Principal Component Analysis (PCA) is a popular method used in statistical learning approaches."
+image: "/images/pca1.jpg"
 ---
 
 
