@@ -4,6 +4,7 @@ title:  "4 Elements That Can Make or Break Your Data Analytics Initiative"
 date: 2017-08-30
 excerpt: "While all of these elements are non-data related, I'd argue they can have as much of an impact on your data analytics initiative as issues relating to data quality, choice of analytical tool, time spent fine-tuning algorithms, etc."
 image: "/images/4elements1.jpg"
+permalink: /blog/2017/08/30/Four-Elements-Analytics-Initiative
 ---
 
 
