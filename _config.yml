@@ -11,12 +11,12 @@ defaults:
     path: ''
     type: posts
   values:
-    permalink: 
+    permalink: ""
     layout: post
     author:
 
 # Jekyll
-permalink:          /:title/
+permalink:          
 markdown:           kramdown
 highlighter:        rouge
 kramdown:
