@@ -4,6 +4,7 @@ title:  "Kaggle Otto Group Challenge - An initial Random Forest approach"
 date: 2015-04-01
 excerpt: "Thoughts and a simple approach to a Kaggle competition using Random Forest in Parallel"
 image: "/images/kaggleotto1.jpg"
+permalink: /blog/2015/04/01/Kaggle's-Otto-Group-Challenge-RandomForestExample
 ---
 
 

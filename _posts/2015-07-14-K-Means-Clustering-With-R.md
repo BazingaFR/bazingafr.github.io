@@ -4,6 +4,7 @@ title:  "Using R for a Simple K-Means Clustering Exercise"
 date: 2015-07-14
 excerpt: "K-Means is a clustering approach that belogs to the class of unsupervised statistical learning methods."
 image: "/images/kmeans1.jpg"
+permalink: /blog/2015/07/14/K-Means-Clustering-With-R
 ---
 
 

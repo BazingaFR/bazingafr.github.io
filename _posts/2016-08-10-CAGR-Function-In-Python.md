@@ -4,6 +4,7 @@ title:  "Calculating Compound Annual Growth Rates (CAGR) in Python"
 date: 2016-08-10
 excerpt: "CAGR measures the mean growth rates of money or units / quantities of something over the years. This is a simple function in Python to calculate CAGR."
 image: "/images/cagr1.jpg"
+permalink: /blog/2016/08/10/CAGR-Function-In-Python
 ---
 
 

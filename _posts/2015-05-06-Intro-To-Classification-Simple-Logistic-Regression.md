@@ -4,6 +4,7 @@ title:  "Intro to Classification Problems: Simple Logistic Regression for Churn 
 date: 2015-05-06
 excerpt: "When we study approaches for predicting qualitative responses, we study classification problems. "
 image: "/images/classification1.jpg"
+permalink: /blog/2015/05/06/Intro-To-Classification-Simple-Logistic-Regression
 ---
 
 

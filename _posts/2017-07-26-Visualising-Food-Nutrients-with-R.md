@@ -4,6 +4,7 @@ title:  "Visualising Food Nutrients with Shiny R Dashboard"
 date: 2017-07-26
 excerpt: "Below is an interactive dashboard I built to showcase Shiny and R flexdashboards"
 image: "/images/food1.jpg"
+permalink: /blog/2017/07/26/Visualising-Food-Nutrients-with-R
 ---
 
 

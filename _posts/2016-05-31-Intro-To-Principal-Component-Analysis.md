@@ -4,6 +4,7 @@ title:  "Introduction to Principal Component Analysis (PCA) in Unsupervised Lear
 date: 2016-05-31
 excerpt: "Principal Component Analysis (PCA) is a popular method used in statistical learning approaches."
 image: "/images/pca1.jpg"
+permalink: /blog/2016/05/31/Intro-To-Principal-Component-Analysis
 ---
 
 

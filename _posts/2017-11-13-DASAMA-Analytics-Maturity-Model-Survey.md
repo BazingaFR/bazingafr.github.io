@@ -4,6 +4,7 @@ title:  "DASAMA - Data Science and Analytics Maturity Assessment model"
 date: 2017-11-13
 excerpt: "The DASAMA model has been developed to help organisations gain visibility on their data science and analytics journey."
 image: "/images/dasama2.jpg"
+permalink: /blog/2017/11/13/DASAMA-Analytics-Maturity-Model-Survey
 ---
 
 

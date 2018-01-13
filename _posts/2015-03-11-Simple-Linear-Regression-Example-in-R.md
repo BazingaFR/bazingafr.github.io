@@ -4,6 +4,7 @@ title:  "Simple Linear Regression - An example using R"
 date: 2015-03-11
 excerpt: "Linear regression is a type of supervised statistical learning approach that is useful for predicting a quantitative response Y."
 image: "/images/simpleregression1.jpg"
+permalink: /blog/2015/03/11/Simple-Linear-Regression-Example-in-R
 ---
 
 

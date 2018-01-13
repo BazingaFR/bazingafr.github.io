@@ -4,6 +4,7 @@ title:  "Quick Guide: Interpreting Simple Linear Model Output in R"
 date: 2015-10-23
 excerpt: "Linear regression models are a key part of the family of supervised learning models."
 image: "/images/lminterpret1.jpg"
+permalink: /blog/2015/10/23/Interpreting-Model-Output-In-R
 ---
 
 

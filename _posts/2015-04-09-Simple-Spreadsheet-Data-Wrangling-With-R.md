@@ -4,6 +4,7 @@ title:  "Simple Excel Data Wrangling with R"
 date: 2015-04-09
 excerpt: "Today we are going to deal with some Microsoft Excel spreadsheet data in R."
 image: "/images/excelwrangling1.jpg"
+permalink: /blog/2015/04/09/Simple-Spreadsheet-Data-Wrangling-With-R
 ---
 
 

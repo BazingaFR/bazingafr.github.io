@@ -4,6 +4,7 @@ title:  "sizeR - Helping you decide which size to buy"
 date: 2017-09-18
 excerpt: "In this blog post I wanted to build a simple solution to help online shoppers decide on the best size of clothes they should buy while online."
 image: "/images/sizer1.jpg"
+permalink: /blog/2017/09/18/sizeR-Helping-Decide-Size-Buy
 ---
 
 
