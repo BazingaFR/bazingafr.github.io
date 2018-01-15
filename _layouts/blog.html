@@ -80,7 +80,7 @@
 								<a href="{{ post.url | absolute_url }}" class="image fit"><img src="{{ post.image | absolute_url }}" alt="" /></a>
 								<p>{{ post.excerpt }}</p>
 								<ul class="actions">
-									<li><a href="{{ post.url | absolute_url }}" class="button">Full Story</a></li>
+									<li><a href="{{ post.url | absolute_url }}" class="button">Read More</a></li>
 								</ul>
 							</article>
 							{% if mod3 == 0 %}
@@ -102,8 +102,9 @@
                   <li><a href="{{ "/" | absolute_url }}" class="button">Home</a></li>
                   <li><a href="{{ "/about/" | absolute_url }}" class="button">About</a></li>
                   <li><a href="{{ "/services/" | absolute_url }}" class="button">Services</a></li>
-                  <li><a href="{{ "/portfolio/" | absolute_url }}" class="button">Portfolio</a></li>
+        <!--          <li><a href="{{ "/projects/" | absolute_url }}" class="button">Projects</a></li>
                   <li><a href="{{ "/clients/" | absolute_url }}" class="button">Clients</a></li>
+        -->
                   <li><a href="{{ "/testimonials/" | absolute_url }}" class="button">Testimonials</a></li>
                   <li><a href="{{ "/blog/" | absolute_url }}" class="button">Blog</a></li>
               </ul>
@@ -119,6 +120,8 @@
 			<!-- Scripts -->
 			{% include scripts-main.html %}
 			{% include tracking.html %}
+
+			<!-- Go to www.addthis.com/dashboard to customize your tools --> <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5a5754f09a4aa453"></script>
 
 	</body>
 </html>

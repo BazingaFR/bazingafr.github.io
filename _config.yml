@@ -11,7 +11,7 @@ defaults:
     path: ''
     type: posts
   values:
-    permalink: ""
+    permalink: "/:title"
     layout: post
     author:
 
@@ -34,7 +34,7 @@ sass:
 #disqus_shortname:   #default
 
 # Social
-analytics-id:       "default"
+analytics-id:       "UA-60784589-1"
 twitter:            FelipeRego
 #facebook:           #default
 #instagram:          #default
